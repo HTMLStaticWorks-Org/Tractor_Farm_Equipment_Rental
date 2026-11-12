@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer &amp; Client Login | IRONFIELD Agri Rentals</title>
+  <meta name="description" content="Sign in to your IronField Agri Rentals client account to access the Farmer Dashboard, book machinery by date, track active rentals, and download GST invoices.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Design System CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Centered Single-Card Authentication Experience -->
+  <main class="auth-page-shell">
+    <!-- Floating / Top-Aligned RTL & Theme Controls (Zero Card Overlap on Mobile) -->
+    <div class="auth-floating-controls">
+      <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
+      <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle Light/Dark Theme">
+        <i class="bi bi-moon-stars-fill"></i>
+      </button>
+    </div>
+
+    <div class="auth-single-card" data-gsap-fade>
+      <!-- Brand Logo Centered at Top Inside Card -->
+      <div class="text-center mb-4 pb-3 border-bottom">
+        <a class="navbar-brand-agri justify-content-center mb-2" href="index.html">
+          <span class="brand-emblem"><i class="bi bi-gear-wide-connected"></i></span>
+          <span class="brand-text-wrap text-start">
+            <span class="brand-title">IRONFIELD</span>
+            <span class="brand-subtitle">Agri Machinery Rentals</span>
+          </span>
+        </a>
+        <h1 class="h2 font-heading text-uppercase mt-2 mb-1">Farmer &amp; Client Login</h1>
+        <p class="small text-secondary-custom mb-0">
+          Access your machinery bookings, dispatch status, and bills
+        </p>
+      </div>
+
+      <form id="farmerLoginForm" novalidate>
+        <!-- Input 1: Email or Mobile Number (Separate Line) -->
+        <div class="mb-3">
+          <label for="loginIdentifier" class="form-label-agri">Email Address or 10-Digit Mobile Number <span class="text-danger">*</span></label>
+          <input type="text" id="loginIdentifier" name="identifier" class="form-control-agri" placeholder="e.g. +91 98765 43210 or farmer@example.com" required>
+        </div>
+
+        <!-- Input 2: Password (Separate Line) -->
+        <div class="mb-3">
+          <label for="loginPassword" class="form-label-agri">Password <span class="text-danger">*</span></label>
+          <div class="password-field-wrap">
+            <input type="password" id="loginPassword" name="password" class="form-control-agri" placeholder="Enter your password" required>
+            <button type="button" class="password-toggle-btn" data-toggle-password="loginPassword" aria-label="Show password">
+              <i class="bi bi-eye-fill"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Remember Me & Forgot Password on the Exact Same Line -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div class="form-check mb-0">
+            <input class="form-check-input" type="checkbox" id="loginRememberMe" name="remember">
+            <label class="form-check-label small" for="loginRememberMe">
+              Remember me
+            </label>
+          </div>
+          <button type="button" class="btn btn-link p-0 small text-accent text-decoration-none fw-semibold" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">
+            Forgot Password?
+          </button>
+        </div>
+
+        <!-- Validation Feedback -->
+        <div id="loginFormFeedback" class="mb-3" aria-live="polite"></div>
+
+        <!-- Primary Login Submit -->
+        <button type="submit" class="btn-agri-primary w-100 py-3">
+          <i class="bi bi-box-arrow-in-right"></i> Login to Farmer Account
+        </button>
+
+        <!-- Social Login Icons at Bottom (Google & Apple) -->
+        <div class="auth-divider"><span>OR CONTINUE WITH</span></div>
+
+        <div class="row g-2 mb-4">
+          <div class="col-6">
+            <button type="button" class="auth-social-btn" data-social-auth="Google" aria-label="Continue with Google">
+              <i class="bi bi-google text-danger"></i>
+              <span>Google</span>
+            </button>
+          </div>
+          <div class="col-6">
+            <button type="button" class="auth-social-btn" data-social-auth="Apple" aria-label="Continue with Apple">
+              <i class="bi bi-apple"></i>
+              <span>Apple</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sign Up & Website Links -->
+        <div class="text-center pt-3 border-top">
+          <p class="small text-secondary-custom mb-2">
+            New to IronField Agri Rentals?
+            <a href="signup.html" class="fw-bold text-accent ms-1">Create Account &rarr;</a>
+          </p>
+          <div class="d-flex justify-content-center gap-3 small font-mono">
+            <a href="index.html" class="text-muted-custom"><i class="bi bi-arrow-left me-1"></i>Back to Home</a>
+            <span class="text-muted-custom">&bull;</span>
+            <a href="dashboard.html" class="text-muted-custom">Open Dashboard</a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-content-agri">
+          <div class="modal-header">
+            <h3 class="modal-title h4 font-heading text-uppercase mb-0" id="forgotPasswordModalLabel">Reset Account Password</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="small text-secondary-custom mb-3">
+              Enter your registered 10-digit mobile number or email address to receive an OTP or password reset link.
+            </p>
+            <div class="mb-3">
+              <label for="resetAccountInput" class="form-label-agri">Registered Mobile or Email</label>
+              <input type="text" id="resetAccountInput" class="form-control-agri" placeholder="+91 98765 43210 or email@domain.com">
+            </div>
+            <div id="resetModalFeedback" class="small"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-agri-outline py-2 px-3" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn-agri-primary py-2 px-4" onclick="document.getElementById('resetModalFeedback').innerHTML='<div class=\'alert alert-success py-2 mb-0\'>Sample frontend reset triggered! Connect your SMS/SMTP provider to dispatch live OTPs.</div>';">
+              Send Reset Instructions
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

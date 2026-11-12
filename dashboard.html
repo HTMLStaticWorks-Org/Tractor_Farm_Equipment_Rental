@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Dashboard — Book, Track Rentals &amp; Bills | IRONFIELD Agri Rentals</title>
+  <meta name="description" content="Farmer Dashboard for booking tractors and farm equipment by date, tracking active &amp; scheduled rentals, and viewing itemized INR rental bills.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Design System CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Mobile Sidebar Backdrop -->
+  <div class="dashboard-backdrop" id="dashboardBackdrop"></div>
+
+  <!-- Full-Height Left Sidebar + Main Workspace Shell -->
+  <div class="dashboard-shell" id="farmerDashboardShell">
+    <!-- Left Full-Height Menu (Top to Bottom with Logout Button) -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar" aria-label="Farmer Dashboard Sidebar">
+      <div>
+        <!-- Brand Header & Mobile Close -->
+        <div class="d-flex align-items-center justify-content-between pb-3 mb-3 border-bottom">
+          <a class="navbar-brand-agri" href="index.html">
+            <span class="brand-emblem"><i class="bi bi-gear-wide-connected"></i></span>
+            <span class="brand-text-wrap">
+              <span class="brand-title">IRONFIELD</span>
+              <span class="brand-subtitle">Farmer Portal</span>
+            </span>
+          </a>
+          <button type="button" class="btn btn-sm btn-outline-secondary d-lg-none" id="closeDashboardSidebar" aria-label="Close Sidebar">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+
+        <!-- Farmer Account Card -->
+        <div class="p-3 rounded bg-surface-alt border mb-4">
+          <div class="d-flex align-items-center gap-2 mb-1">
+            <span class="brand-emblem font-heading" style="width:36px;height:36px;font-size:1rem;">HS</span>
+            <div>
+              <strong class="d-block small">Harpreet Singh Gill</strong>
+              <span class="font-mono text-muted-custom" style="font-size:0.72rem;">KYC Verified &bull; Gharaunda</span>
+            </div>
+          </div>
+          <span class="status-pill status-available mt-2">Active KCC Member</span>
+        </div>
+
+        <!-- Sidebar Navigation Items -->
+        <span class="font-mono small text-muted-custom text-uppercase d-block mb-2 px-2">Rental Operations</span>
+        <ul class="dashboard-nav-list mb-4">
+          <li>
+            <button type="button" class="dashboard-nav-btn active" data-dash-section="overview">
+              <i class="bi bi-grid-1x2-fill"></i>
+              <span>Overview</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dashboard-nav-btn" data-dash-section="sectionBook">
+              <i class="bi bi-calendar-plus-fill"></i>
+              <span>Book by Date</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dashboard-nav-btn" data-dash-section="sectionRentals">
+              <i class="bi bi-truck-front-fill"></i>
+              <span>Track Rentals</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dashboard-nav-btn" data-dash-section="sectionBills">
+              <i class="bi bi-receipt-cutoff"></i>
+              <span>Bills &amp; Invoices</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Bottom Pinned Logout Button -->
+      <div class="pt-3 mt-4 border-top">
+        <a href="login.html" class="dashboard-logout-btn">
+          <i class="bi bi-box-arrow-left"></i>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Dashboard Content Area -->
+    <div class="dashboard-main">
+      <!-- Sticky Topbar -->
+      <header class="dashboard-topbar">
+        <div class="d-flex align-items-center gap-3">
+          <button type="button" class="navbar-toggler-agri d-lg-none" id="openDashboardSidebar" aria-label="Open Dashboard Menu">
+            <i class="bi bi-list"></i>
+          </button>
+          <div>
+            <h1 class="h4 font-heading text-uppercase mb-0 d-block">Farmer Equipment &amp; Billing Console</h1>
+            <span class="small text-muted-custom font-mono d-none d-sm-block">Sample client data stored locally in browser</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+          <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
+          <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle Light/Dark Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- Dashboard Workspace -->
+      <main class="dashboard-content">
+        <!-- KPI Summary Row -->
+        <div class="row g-3 mb-4 justify-content-center">
+          <div class="col-6 col-md-6 col-xl-3">
+            <div class="kpi-card-agri">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="small font-mono text-muted-custom text-uppercase">Active Rentals</span>
+                <i class="bi bi-truck-front-fill text-accent fs-5"></i>
+              </div>
+              <div class="h2 font-heading fw-bold mb-1 d-block" id="kpiActiveRentals">1</div>
+              <span class="small text-secondary-custom d-block">In field operation</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-xl-3">
+            <div class="kpi-card-agri">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="small font-mono text-muted-custom text-uppercase">Scheduled Upcoming</span>
+                <i class="bi bi-calendar2-check-fill text-accent fs-5"></i>
+              </div>
+              <div class="h2 font-heading fw-bold mb-1 d-block" id="kpiScheduledRentals">1</div>
+              <span class="small text-secondary-custom d-block">Reserved dispatch slots</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-xl-3">
+            <div class="kpi-card-agri">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="small font-mono text-muted-custom text-uppercase">Logged Engine Hours</span>
+                <i class="bi bi-speedometer2 text-accent fs-5"></i>
+              </div>
+              <div class="h2 font-heading fw-bold mb-1 d-block" id="kpiEngineHours">29.5 hrs</div>
+              <span class="small text-secondary-custom d-block">Across season dispatches</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-xl-3">
+            <div class="kpi-card-agri">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="small font-mono text-muted-custom text-uppercase">Total Billed (INR)</span>
+                <i class="bi bi-currency-rupee text-accent fs-5"></i>
+              </div>
+              <div class="h2 font-heading fw-bold mb-1 text-accent d-block" id="kpiTotalBills">₹25,400</div>
+              <span class="small text-secondary-custom d-block">Excl. HSD fuel actuals</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 1: BOOK EQUIPMENT BY DATE -->
+        <section class="dash-view-panel mb-4" id="sectionBook">
+          <div class="p-4 rounded bg-surface border shadow-sm">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 pb-3 mb-4 border-bottom">
+              <div>
+                <span class="eyebrow-tag mb-1"><i class="bi bi-calendar-range-fill"></i> Date-Based Dispatch Scheduler</span>
+                <h2 class="h3 font-heading text-uppercase mb-0 d-block">Book Tractor or Farm Equipment by Date</h2>
+              </div>
+              <span class="badge bg-dark font-mono py-2 px-3">Dry Rate &bull; Fuel Excluded</span>
+            </div>
+
+            <form id="dashBookingForm" novalidate>
+              <div class="row g-4 align-items-start">
+                <div class="col-xl-7">
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label for="dashBookEquipment" class="form-label-agri">Select Equipment Model</label>
+                      <select id="dashBookEquipment" class="form-select-agri"></select>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="dashBookStartDate" class="form-label-agri">Preferred Start Date</label>
+                      <input type="date" id="dashBookStartDate" class="form-control-agri" required>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="dashBookEndDate" class="form-label-agri">Expected Return Date</label>
+                      <input type="date" id="dashBookEndDate" class="form-control-agri" required>
+                    </div>
+                    <div class="col-sm-8">
+                      <label for="dashBookLocation" class="form-label-agri">Village / Farm Chak Location <span class="text-danger">*</span></label>
+                      <input type="text" id="dashBookLocation" class="form-control-agri" value="Village Gharaunda, Karnal" placeholder="e.g. Village Nilokheri, Karnal" required>
+                    </div>
+                    <div class="col-sm-4">
+                      <label for="dashBookDistance" class="form-label-agri">Yard Distance (km)</label>
+                      <input type="number" id="dashBookDistance" class="form-control-agri" value="0" min="0" max="250">
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check p-3 ps-4 rounded bg-surface-alt border">
+                        <input class="form-check-input" type="checkbox" id="dashBookOperator">
+                        <label class="form-check-label small fw-semibold" for="dashBookOperator">
+                          Add Certified Tractor/Implement Operator (+₹950/day) &mdash; Optional
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12" id="dashBookingFeedback" aria-live="polite"></div>
+                  </div>
+                </div>
+
+                <!-- Live Rate Breakdown Card -->
+                <div class="col-xl-5">
+                  <div class="p-4 rounded bg-charcoal text-white border border-secondary">
+                    <span class="font-mono small text-accent d-block">LIVE ESTIMATE PREVIEW</span>
+                    <h3 class="h4 font-heading text-uppercase text-white mb-3">Booking Summary</h3>
+
+                    <div class="d-flex justify-content-between py-2 border-bottom border-secondary small">
+                      <span class="text-white-50">Rental Duration &amp; Hrs Cap:</span>
+                      <strong class="font-mono" id="dashPreviewDays">2 Days (16 Engine Hrs)</strong>
+                    </div>
+                    <div class="d-flex justify-content-between py-2 border-bottom border-secondary small">
+                      <span class="text-white-50">Bare Machine Rent (Dry):</span>
+                      <strong class="font-mono" id="dashPreviewBase">₹5,600</strong>
+                    </div>
+                    <div class="d-flex justify-content-between py-2 border-bottom border-secondary small">
+                      <span class="text-white-50">Operator Charge:</span>
+                      <strong class="font-mono" id="dashPreviewOperator">₹0</strong>
+                    </div>
+                    <div class="d-flex justify-content-between py-2 border-bottom border-secondary small">
+                      <span class="text-white-50">Transport (&gt; 10km @ ₹45/km):</span>
+                      <strong class="font-mono" id="dashPreviewDelivery">₹0</strong>
+                    </div>
+                    <div class="d-flex justify-content-between py-2 border-bottom border-secondary small">
+                      <span class="text-white-50">Refundable Deposit at Yard:</span>
+                      <strong class="font-mono" id="dashPreviewDeposit">₹15,000</strong>
+                    </div>
+                    <div class="d-flex justify-content-between pt-3 mb-4">
+                      <span class="fw-bold">Estimated Rent Total:</span>
+                      <strong class="h3 font-mono text-accent mb-0" id="dashPreviewTotal">₹5,600</strong>
+                    </div>
+
+                    <button type="submit" class="btn-agri-primary w-100">
+                      <i class="bi bi-calendar2-plus-fill"></i> Confirm Sample Booking Request
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- PANEL 2: TRACK ACTIVE & SCHEDULED RENTALS -->
+        <section class="dash-view-panel mb-4" id="sectionRentals">
+          <div class="p-4 rounded bg-surface border shadow-sm">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 pb-3 mb-3 border-bottom">
+              <div>
+                <span class="eyebrow-tag mb-1"><i class="bi bi-geo-alt-fill"></i> Fleet Telemetry &amp; Status</span>
+                <h2 class="h3 font-heading text-uppercase mb-0">Track My Machinery Rentals</h2>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <button type="button" class="filter-pill-btn py-1 px-3 active" style="font-size:0.85rem;" data-rental-filter="all">All</button>
+                <button type="button" class="filter-pill-btn py-1 px-3" style="font-size:0.85rem;" data-rental-filter="active">Active</button>
+                <button type="button" class="filter-pill-btn py-1 px-3" style="font-size:0.85rem;" data-rental-filter="scheduled">Scheduled</button>
+                <button type="button" class="filter-pill-btn py-1 px-3" style="font-size:0.85rem;" data-rental-filter="completed">Completed</button>
+              </div>
+            </div>
+
+            <div class="pricing-table-wrapper">
+              <div class="table-responsive">
+                <table class="table-agri">
+                  <thead>
+                    <tr>
+                      <th>Booking ID &amp; Site</th>
+                      <th>Machinery Assigned</th>
+                      <th>Rental Dates</th>
+                      <th>Engine Hours</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="dashRentalsBody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PANEL 3: VIEWING BILLS & INVOICES -->
+        <section class="dash-view-panel" id="sectionBills">
+          <div class="p-4 rounded bg-surface border shadow-sm">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 pb-3 mb-3 border-bottom">
+              <div>
+                <span class="eyebrow-tag mb-1"><i class="bi bi-file-earmark-text-fill"></i> INR Billing Ledger</span>
+                <h2 class="h3 font-heading text-uppercase mb-0">Rental Bills &amp; Security Deposit Status</h2>
+              </div>
+              <span class="small font-mono text-muted-custom">Click "View Bill" for full itemized receipt</span>
+            </div>
+
+            <div class="pricing-table-wrapper">
+              <div class="table-responsive">
+                <table class="table-agri">
+                  <thead>
+                    <tr>
+                      <th>Invoice / Ref</th>
+                      <th>Equipment &amp; Period</th>
+                      <th>Base Rent</th>
+                      <th>Operator &amp; Delivery</th>
+                      <th>Total Rent</th>
+                      <th>Security Deposit</th>
+                      <th>Bill Status</th>
+                      <th>Receipt</th>
+                    </tr>
+                  </thead>
+                  <tbody id="dashBillsBody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Itemized Bill / Invoice Modal -->
+  <div class="modal fade" id="dashBillModal" tabindex="-1" aria-labelledby="dashBillModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content modal-content-agri">
+        <div class="modal-header">
+          <h3 class="modal-title h4 font-heading text-uppercase mb-0" id="dashBillModalLabel">
+            <i class="bi bi-receipt-cutoff text-accent me-2"></i>Itemized Rental Bill (INR)
+          </h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="dashBillModalBody"></div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn-agri-outline py-2 px-3" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn-agri-primary py-2 px-4" onclick="window.print()">
+            <i class="bi bi-printer-fill"></i> Print Bill Receipt
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

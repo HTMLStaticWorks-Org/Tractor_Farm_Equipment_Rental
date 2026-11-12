@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rental Rates &amp; Pricing Tables (INR) | IRONFIELD Agri Rentals</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <meta name="description" content="Transparent daily, weekly, and monthly INR (₹) rental rates for tractors, rotavators, cultivators, harvesters, planters, trailers, and water pumps.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Design System CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Mandatory Sticky Navigation Bar -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg site-navbar" aria-label="Main Navigation">
+      <div class="container">
+        <a class="navbar-brand-agri" href="index.html">
+          <span class="brand-emblem"><i class="bi bi-gear-wide-connected"></i></span>
+          <span class="brand-text-wrap">
+            <span class="brand-title">IRONFIELD</span>
+            <span class="brand-subtitle">Agri Machinery Rentals</span>
+          </span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 d-lg-none">
+          <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
+          <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle Light/Dark Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="navbar-toggler navbar-toggler-agri" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbarCollapse">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                <li>
+                  <a class="dropdown-item" href="index.html">
+                    <div>
+                      <span>Home 1 — Field Power</span>
+                      <small class="dropdown-item-sub">Cinematic Fleet &amp; Seasonal Showcase</small>
+                    </div>
+                    <i class="bi bi-arrow-right-short fs-5"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="home-2.html">
+                    <div>
+                      <span>Home 2 — Fleet Matrix</span>
+                      <small class="dropdown-item-sub">Editorial Specs &amp; Live Rate Estimator</small>
+                    </div>
+                    <i class="bi bi-arrow-right-short fs-5"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipment.html">Equipment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="rates.html">Rates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 navbar-actions-wrap">
+            <button type="button" class="rtl-toggle-btn d-none d-lg-inline-flex" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
+            <button type="button" class="theme-toggle-btn d-none d-lg-inline-flex" data-theme-toggle aria-label="Toggle Light/Dark Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <a href="signup.html" class="btn-agri-primary btn-nav-cta w-100 w-lg-auto">
+              <i class="bi bi-person-plus-fill"></i> Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. PAGE HERO BANNER (UNIFORM HEIGHT) -->
+    <section class="page-hero-banner">
+      <img src="assets/images/banner-rates-field.jpg" alt="Agricultural Equipment Rental Pricing in INR" class="page-hero-bg">
+      <div class="page-hero-overlay"></div>
+      <div class="container position-relative z-2">
+        <div class="row g-3 align-items-center">
+          <div class="col-lg-8">
+            <span class="eyebrow-tag eyebrow-dark"><i class="bi bi-currency-rupee"></i> Transparent INR Tariff Schedule</span>
+            <h1 class="hero-headline mb-2" style="font-size:clamp(2rem, 3.8vw, 3.2rem);">
+              Equipment Rental <span>Rates &amp; Terms</span>
+            </h1>
+            <p class="text-white-50 mb-0" style="max-width:650px;">
+              Compare Daily, Weekly, and Monthly rates in INR (₹). Bare-machine dry tariffs with configurable operator and farm-gate delivery options.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="#interactive-rate-calculator" class="btn-agri-primary">
+              <i class="bi bi-calculator-fill"></i> Open Rental Cost Calculator
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. RENTAL DURATION COMPARISON & POPULAR RENTAL OPTIONS -->
+    <section class="section-padding-sm bg-surface-alt border-bottom" id="seasonal-packages">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="eyebrow-tag"><i class="bi bi-clock-history"></i> Rental Duration Comparison</span>
+          <h2 class="section-title">Choose Your Rental Duration Structure</h2>
+          <p class="section-subtitle mx-auto">
+            Whether you need a laser leveler for 2 days or a 4WD tractor for a 30-day sowing contract, our tiered billing rewards longer field deployments.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-xl-4">
+            <div class="feature-box-agri d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="badge bg-secondary font-mono">SHORT-TERM FLEXIBILITY</span>
+                  <span class="font-mono small text-muted-custom">1 – 5 Days</span>
+                </div>
+                <h3 class="h2 font-heading text-uppercase mb-2 d-block">Daily Rental Rates</h3>
+                <p class="text-secondary-custom small mb-3 d-block">
+                  Ideal for small-to-medium landholdings (5–20 acres) requiring quick rotavation, ploughing, seed drilling, or orchard spraying.
+                </p>
+                <ul class="list-unstyled small mb-4">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i><strong>8 Engine Meter Hours</strong> included per 24-hr day</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>Implements from <strong>₹650/day</strong> | Tractors from <strong>₹1,650/day</strong></li>
+                  <li class="mb-2"><i class="bi bi-info-circle text-muted-custom me-2"></i>Dry rate (Fuel &amp; operator excluded by default)</li>
+                  <li class="mb-2"><i class="bi bi-info-circle text-muted-custom me-2"></i>Overtime engine hours billed pro-rata</li>
+                </ul>
+              </div>
+              <a href="contact.html?duration=daily#enquiry-form" class="btn-agri-outline w-100">Book Daily Shift</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="feature-box-agri d-flex flex-column justify-content-between" style="border:2px solid var(--clr-accent);">
+              <div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="badge bg-warning text-dark font-mono">POPULAR CHOICE &bull; SAVE ~12%</span>
+                  <span class="font-mono small text-muted-custom">6 Working Days</span>
+                </div>
+                <h3 class="h2 font-heading text-uppercase mb-2 d-block">Weekly Rental Rates</h3>
+                <p class="text-secondary-custom small mb-3 d-block">
+                  Best for commercial farms (25–80 acres) and village contractors completing multi-pass tillage, laser leveling, and sowing.
+                </p>
+                <ul class="list-unstyled small mb-4">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i><strong>48 Engine Meter Hours</strong> over 7 calendar days</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>Implements from <strong>₹3,900/wk</strong> | Tractors from <strong>₹10,200/wk</strong></li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>15% discount on bundled implement attachment</li>
+                  <li class="mb-2"><i class="bi bi-info-circle text-muted-custom me-2"></i>Dry rate (Optional operator at ₹950/day)</li>
+                </ul>
+              </div>
+              <a href="contact.html?duration=weekly#enquiry-form" class="btn-agri-primary w-100">Book Weekly Package</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="feature-box-agri d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="badge bg-success font-mono">CONTRACTOR TIER &bull; SAVE ~25%</span>
+                  <span class="font-mono small text-muted-custom">26 Working Days</span>
+                </div>
+                <h3 class="h2 font-heading text-uppercase mb-2 d-block">Monthly Seasonal Rates</h3>
+                <p class="text-secondary-custom small mb-3 d-block">
+                  Designed for FPOs, custom hiring centers, and large agricultural contractors operating continuously through Kharif or Rabi peaks.
+                </p>
+                <ul class="list-unstyled small mb-4">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i><strong>200 Engine Meter Hours</strong> per 30-day contract</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>Implements from <strong>₹13,500/mo</strong> | Tractors from <strong>₹36,000/mo</strong></li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>Scheduled 150-hour on-farm oil/filter service included</li>
+                  <li class="mb-2"><i class="bi bi-info-circle text-muted-custom me-2"></i>Dry rate (Fuel, operator &amp; transport configurable)</li>
+                </ul>
+              </div>
+              <a href="contact.html?duration=monthly#enquiry-form" class="btn-agri-forest w-100">Request Monthly Contract</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CLEARLY STRUCTURED PRICING TABLES BY EQUIPMENT CATEGORY -->
+    <section class="section-padding">
+      <div class="container">
+        <!-- TABLE A: TRACTOR RENTAL PRICING -->
+        <div class="mb-5">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-3 gap-2">
+            <div>
+              <span class="eyebrow-tag"><i class="bi bi-truck-front-fill"></i> Schedule 01</span>
+              <h2 class="h2 font-heading text-uppercase mb-0">Tractor Rental Pricing (Compact, Utility &amp; Heavy-Duty 4WD)</h2>
+            </div>
+            <span class="small font-mono text-muted-custom">Bare-machine dry rates &bull; 8 Engine Hours/Day standard</span>
+          </div>
+
+          <div class="pricing-table-wrapper">
+            <div class="table-responsive">
+              <table class="table-agri">
+                <thead>
+                  <tr>
+                    <th>Tractor Model &amp; Class</th>
+                    <th>HP &amp; Drive Spec</th>
+                    <th>Daily Rate</th>
+                    <th>Weekly Rate</th>
+                    <th>Monthly Rate</th>
+                    <th>Security Deposit</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong class="d-block">Kubota B2741S NeoStar</strong>
+                      <span class="small text-muted-custom font-mono">Compact Orchard Tractor</span>
+                    </td>
+                    <td class="font-mono small">27 HP &bull; 4WD Narrow (3.35ft)</td>
+                    <td class="price-tag-inr">₹1,650</td>
+                    <td class="price-tag-inr">₹10,200</td>
+                    <td class="price-tag-inr">₹36,000</td>
+                    <td class="font-mono small">₹8,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="kubota-b2741s-compact-4wd">Specs</button>
+                        <a href="contact.html?equipment=kubota-b2741s-compact-4wd#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="d-block">Swaraj 855 FE 5-Star</strong>
+                      <span class="small text-muted-custom font-mono">Utility Tractor</span>
+                    </td>
+                    <td class="font-mono small">52 HP &bull; 4WD 3478cc</td>
+                    <td class="price-tag-inr">₹2,300</td>
+                    <td class="price-tag-inr">₹14,500</td>
+                    <td class="price-tag-inr">₹51,000</td>
+                    <td class="font-mono small">₹12,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="swaraj-855-fe-4wd-utility">Specs</button>
+                        <a href="contact.html?equipment=swaraj-855-fe-4wd-utility#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="d-block">New Holland 3630 TX Special</strong>
+                      <span class="small text-muted-custom font-mono">Utility Tractor</span>
+                    </td>
+                    <td class="font-mono small">50 HP &bull; 12F+3R Creeper</td>
+                    <td class="price-tag-inr">₹2,400</td>
+                    <td class="price-tag-inr">₹15,200</td>
+                    <td class="price-tag-inr">₹53,500</td>
+                    <td class="font-mono small">₹12,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="new-holland-3630-tx-special">Specs</button>
+                        <a href="contact.html?equipment=new-holland-3630-tx-special#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="d-block">John Deere 5310 GearPro 4WD</strong>
+                      <span class="small text-muted-custom font-mono">Heavy-Duty Tractor</span>
+                    </td>
+                    <td class="font-mono small">57 HP &bull; 4WD Turbo 2500kg Lift</td>
+                    <td class="price-tag-inr">₹2,800</td>
+                    <td class="price-tag-inr">₹17,500</td>
+                    <td class="price-tag-inr">₹62,000</td>
+                    <td class="font-mono small">₹15,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="john-deere-5310-gearpro-4wd">Specs</button>
+                        <a href="contact.html?equipment=john-deere-5310-gearpro-4wd#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="d-block">Mahindra Novo 655 DI PP CRDe</strong>
+                      <span class="small text-muted-custom font-mono">Heavy-Duty Tractor</span>
+                    </td>
+                    <td class="font-mono small">68 HP &bull; 4WD 15F+15R Shuttle</td>
+                    <td class="price-tag-inr">₹3,400</td>
+                    <td class="price-tag-inr">₹21,500</td>
+                    <td class="price-tag-inr">₹76,000</td>
+                    <td class="font-mono small">₹20,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="mahindra-novo-655-di-pp-4wd">Specs</button>
+                        <a href="contact.html?equipment=mahindra-novo-655-di-pp-4wd#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- TABLE B: ROTAVATOR, CULTIVATOR & LAND PREPARATION PRICING -->
+        <div class="mb-5">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-3 gap-2">
+            <div>
+              <span class="eyebrow-tag"><i class="bi bi-gear-wide-connected"></i> Schedule 02</span>
+              <h2 class="h2 font-heading text-uppercase mb-0">Rotavator, Cultivator, Harrow &amp; Plough Pricing</h2>
+            </div>
+            <span class="small font-mono text-muted-custom">15% discount when bundled with an IronField Tractor</span>
+          </div>
+
+          <div class="pricing-table-wrapper">
+            <div class="table-responsive">
+              <table class="table-agri">
+                <thead>
+                  <tr>
+                    <th>Equipment &amp; Sub-Category</th>
+                    <th>Working Spec &amp; Tractor Match</th>
+                    <th>Daily Rate</th>
+                    <th>Weekly Rate</th>
+                    <th>Monthly Rate</th>
+                    <th>Security Deposit</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong class="d-block">FieldKing 11-Tyne Spring Cultivator</strong>
+                      <span class="small text-muted-custom font-mono">Cultivators</span>
+                    </td>
+                    <td class="font-mono small">8 ft Width &bull; 45–55 HP Match</td>
+                    <td class="price-tag-inr">₹650</td>
+                    <td class="price-tag-inr">₹3,900</td>
+                    <td class="price-tag-inr">₹13,500</td>
+                    <td class="font-mono small">₹3,500</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="fieldking-11-tyne-spring-cultivator">Specs</button>
+                        <a href="contact.html?equipment=fieldking-11-tyne-spring-cultivator#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="d-block">Maschio 16-Disc Offset Harrow</strong>
+                      <span class="small text-muted-custom font-mono">Disc Harrows</span>
+                    </td>
+                    <td class="font-mono small">610mm Boron Discs &bull; 50–60 HP</td>
+                    <td class="price-tag-inr">₹850</td>
+                    <td class="price-tag-inr">₹5,200</td>
+                    <td class="price-tag-inr">₹17,800</td>
+                    <td class="font-mono small">₹4,500</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="maschio-16-disc-offset-harrow">Specs</button>
+                        <a href="contact.html?equipment=maschio-16-disc-offset-harrow#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="d-block">Shaktiman Semi-Champion Plus 7ft</strong>
+                      <span class="small text-muted-custom font-mono">Rotavators</span>
+                    </td>
+                    <td class="font-mono small">48 L-Blades (2.15m) &bull; 50–65 HP</td>
+                    <td class="price-tag-inr">₹950</td>
+                    <td class="price-tag-inr">₹5,800</td>
+                    <td class="price-tag-inr">₹19,500</td>
+                    <td class="font-mono small">₹5,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="shaktiman-semi-champion-rotavator-7ft">Specs</button>
+                        <a href="contact.html?equipment=shaktiman-semi-champion-rotavator-7ft#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="d-block">Lemken Opal 090 2-Furrow Hydraulic MB</strong>
+                      <span class="small text-muted-custom font-mono">Ploughs</span>
+                    </td>
+                    <td class="font-mono small">350mm Deep Inversion &bull; 50–65 HP</td>
+                    <td class="price-tag-inr">₹1,100</td>
+                    <td class="price-tag-inr">₹6,800</td>
+                    <td class="price-tag-inr">₹23,000</td>
+                    <td class="font-mono small">₹6,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="lemken-opal-090-2mb-reversible-plough">Specs</button>
+                        <a href="contact.html?equipment=lemken-opal-090-2mb-reversible-plough#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- TABLE C: HARVESTER, THRESHER & PLANTING PRICING -->
+        <div class="mb-5">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-3 gap-2">
+            <div>
+              <span class="eyebrow-tag"><i class="bi bi-flower1"></i> Schedule 03</span>
+              <h2 class="h2 font-heading text-uppercase mb-0">Harvester, Thresher, Seed Drill &amp; Planter Pricing</h2>
+            </div>
+            <span class="small font-mono text-muted-custom">Calibrated seed metering discs &amp; crop sieves supplied</span>
+          </div>
+
+          <div class="pricing-table-wrapper">
+            <div class="table-responsive">
+              <table class="table-agri">
+                <thead>
+                  <tr>
+                    <th>Equipment &amp; Sub-Category</th>
+                    <th>Capacity &amp; Power Spec</th>
+                    <th>Daily Rate</th>
+                    <th>Weekly Rate</th>
+                    <th>Monthly Rate</th>
+                    <th>Security Deposit</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong class="d-block">National 11-Row Zero-Till Seed Drill</strong>
+                      <span class="small text-muted-custom font-mono">Seed Drills</span>
+                    </td>
+                    <td class="font-mono small">11 Rows Direct Sow &bull; 45–55 HP</td>
+                    <td class="price-tag-inr">₹900</td>
+                    <td class="price-tag-inr">₹5,500</td>
+                    <td class="price-tag-inr">₹18,500</td>
+                    <td class="font-mono small">₹5,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="national-11-row-zero-till-seed-drill">Specs</button>
+                        <a href="contact.html?equipment=national-11-row-zero-till-seed-drill#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="d-block">Dashmesh 9100 Multi-Crop Thresher</strong>
+                      <span class="small text-muted-custom font-mono">Threshers</span>
+                    </td>
+                    <td class="font-mono small">20–28 Qtl/Hr &bull; 50+ HP PTO</td>
+                    <td class="price-tag-inr">₹1,500</td>
+                    <td class="price-tag-inr">₹9,200</td>
+                    <td class="price-tag-inr">₹31,000</td>
+                    <td class="font-mono small">₹7,500</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="dashmesh-9100-multi-crop-thresher">Specs</button>
+                        <a href="contact.html?equipment=dashmesh-9100-multi-crop-thresher#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="d-block">Maschio SP Dorada 4-Row Pneumatic Planter</strong>
+                      <span class="small text-muted-custom font-mono">Planters</span>
+                    </td>
+                    <td class="font-mono small">Vacuum Precision &bull; 50–65 HP</td>
+                    <td class="price-tag-inr">₹1,600</td>
+                    <td class="price-tag-inr">₹9,800</td>
+                    <td class="price-tag-inr">₹33,000</td>
+                    <td class="font-mono small">₹8,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="maschio-sp-dorada-4-row-pneumatic-planter">Specs</button>
+                        <a href="contact.html?equipment=maschio-sp-dorada-4-row-pneumatic-planter#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="d-block">Claas Crop Tiger 40 Terra Trac Harvester</strong>
+                      <span class="small text-muted-custom font-mono">Harvesters</span>
+                    </td>
+                    <td class="font-mono small">76 HP Self-Propelled &bull; 7ft Bar</td>
+                    <td class="price-tag-inr">₹8,500</td>
+                    <td class="price-tag-inr">₹54,000</td>
+                    <td class="price-tag-inr">₹1,95,000</td>
+                    <td class="font-mono small">₹35,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="claas-crop-tiger-40-terra-trac-harvester">Specs</button>
+                        <a href="contact.html?equipment=claas-crop-tiger-40-terra-trac-harvester#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- TABLE D: OTHER AGRICULTURAL EQUIPMENT PRICING -->
+        <div>
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-3 gap-2">
+            <div>
+              <span class="eyebrow-tag"><i class="bi bi-tools"></i> Schedule 04</span>
+              <h2 class="h2 font-heading text-uppercase mb-0">Other Agricultural Equipment Pricing (Trailers, Sprayers, Pumps &amp; Laser)</h2>
+            </div>
+            <span class="small font-mono text-muted-custom">Available standalone or paired with tractor fleet</span>
+          </div>
+
+          <div class="pricing-table-wrapper">
+            <div class="table-responsive">
+              <table class="table-agri">
+                <thead>
+                  <tr>
+                    <th>Equipment &amp; Sub-Category</th>
+                    <th>Key Specification</th>
+                    <th>Daily Rate</th>
+                    <th>Weekly Rate</th>
+                    <th>Monthly Rate</th>
+                    <th>Security Deposit</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong class="d-block">Kirloskar 10 HP Mobile Diesel Water Pump</strong>
+                      <span class="small text-muted-custom font-mono">Water Pumps</span>
+                    </td>
+                    <td class="font-mono small">1850 LPM &bull; 4"x4" Trolley Set</td>
+                    <td class="price-tag-inr">₹700</td>
+                    <td class="price-tag-inr">₹4,200</td>
+                    <td class="price-tag-inr">₹14,000</td>
+                    <td class="font-mono small">₹4,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="kirloskar-10hp-diesel-irrigation-pump">Specs</button>
+                        <a href="contact.html?equipment=kirloskar-10hp-diesel-irrigation-pump#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="d-block">10-Ton Tandem Hydraulic Tipping Trailer</strong>
+                      <span class="small text-muted-custom font-mono">Trailers</span>
+                    </td>
+                    <td class="font-mono small">10 Metric Ton Payload &bull; 45+ HP Tow</td>
+                    <td class="price-tag-inr">₹800</td>
+                    <td class="price-tag-inr">₹4,800</td>
+                    <td class="price-tag-inr">₹16,500</td>
+                    <td class="font-mono small">₹5,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="vishwakarma-10-ton-hydraulic-tipping-trailer">Specs</button>
+                        <a href="contact.html?equipment=vishwakarma-10-ton-hydraulic-tipping-trailer#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="d-block">Mitra Airotec Turbo 600L Sprayer</strong>
+                      <span class="small text-muted-custom font-mono">Sprayers</span>
+                    </td>
+                    <td class="font-mono small">600L Tank &bull; 75 LPM Brass Pump</td>
+                    <td class="price-tag-inr">₹950</td>
+                    <td class="price-tag-inr">₹5,800</td>
+                    <td class="price-tag-inr">₹19,500</td>
+                    <td class="font-mono small">₹5,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="mitra-airotec-turbo-600l-orchard-sprayer">Specs</button>
+                        <a href="contact.html?equipment=mitra-airotec-turbo-600l-orchard-sprayer#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="d-block">Apogee Laser Guided Land Leveler (7ft)</strong>
+                      <span class="small text-muted-custom font-mono">Agricultural Implements</span>
+                    </td>
+                    <td class="font-mono small">±2mm Accuracy &bull; 800m Laser Range</td>
+                    <td class="price-tag-inr">₹1,400</td>
+                    <td class="price-tag-inr">₹8,500</td>
+                    <td class="price-tag-inr">₹29,000</td>
+                    <td class="font-mono small">₹10,000</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-view-details="apogee-laser-guided-land-leveler-7ft">Specs</button>
+                        <a href="contact.html?equipment=apogee-laser-guided-land-leveler-7ft#enquiry-form" class="btn-agri-primary py-1 px-3" style="font-size:0.82rem;">Rent</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. INTERACTIVE RENTAL COST ESTIMATOR -->
+    <section class="section-padding bg-surface-alt border-top border-bottom" id="interactive-rate-calculator">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-xl-6">
+            <span class="eyebrow-tag"><i class="bi bi-calculator"></i> Configurable Cost Estimator</span>
+            <h2 class="section-title mb-2">Estimate Your Total Rental Outlay</h2>
+            <p class="text-secondary-custom mb-4">
+              Select your required machine, rental period, and optional add-ons below. Notice how fuel, operator, and transport are itemized separately so you never pay for services you don't need.
+            </p>
+
+            <div class="p-4 rounded bg-surface border shadow-sm">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="calcMachineSelect" class="form-label-agri">1. Select Equipment Model</label>
+                  <select id="calcMachineSelect" class="form-select-agri"></select>
+                </div>
+                <div class="col-sm-6">
+                  <label for="calcDurationSelect" class="form-label-agri">2. Tariff Tier</label>
+                  <select id="calcDurationSelect" class="form-select-agri">
+                    <option value="daily">Daily Rate (8 Hrs/Day)</option>
+                    <option value="weekly">Weekly Rate (6 Working Days)</option>
+                    <option value="monthly">Monthly Seasonal Rate</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <label for="calcQtyInput" class="form-label-agri">3. Number of Days / Weeks / Months</label>
+                  <input type="number" id="calcQtyInput" class="form-control-agri" value="2" min="1" max="60">
+                </div>
+                <div class="col-sm-6">
+                  <label for="calcDeliveryKm" class="form-label-agri">4. Distance from Yard (km)</label>
+                  <input type="number" id="calcDeliveryKm" class="form-control-agri" value="0" min="0" max="250" placeholder="0 for Self Pickup (First 10km Free)">
+                </div>
+                <div class="col-sm-6 d-flex align-items-end">
+                  <div class="form-check p-3 rounded bg-surface-alt border w-100 mb-0">
+                    <input class="form-check-input ms-0 me-2" type="checkbox" id="calcOperatorCheck">
+                    <label class="form-check-label small fw-semibold" for="calcOperatorCheck">
+                      Add Certified Operator (+₹950/day)
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6">
+            <div class="p-4 p-md-5 rounded bg-charcoal text-white border border-secondary shadow-lg">
+              <div class="d-flex justify-content-between align-items-center pb-3 mb-3 border-bottom border-secondary">
+                <div>
+                  <span class="font-mono small text-accent d-block">SAMPLE ITEMIZED ESTIMATE</span>
+                  <h3 class="h3 font-heading text-uppercase text-white mb-0 d-block">Estimated Rental Summary</h3>
+                </div>
+                <span class="badge bg-warning text-dark font-mono">INR (₹)</span>
+              </div>
+
+              <div class="d-flex justify-content-between py-2 border-bottom border-secondary">
+                <span class="text-white-50">Bare Machine Rental (Dry Rate):</span>
+                <strong class="font-mono fs-5" id="calcBaseCostDisplay">₹5,600</strong>
+              </div>
+              <div class="d-flex justify-content-between py-2 border-bottom border-secondary">
+                <span class="text-white-50">Optional Certified Operator:</span>
+                <strong class="font-mono" id="calcOperatorCostDisplay">₹0</strong>
+              </div>
+              <div class="d-flex justify-content-between py-2 border-bottom border-secondary">
+                <span class="text-white-50">Transport / Delivery (@ ₹45/km &gt; 10km):</span>
+                <strong class="font-mono" id="calcDeliveryCostDisplay">₹0 (Within 10km / Pickup)</strong>
+              </div>
+              <div class="d-flex justify-content-between py-2 border-bottom border-secondary">
+                <span class="text-white-50">HSD Diesel Fuel Policy:</span>
+                <span class="font-mono small text-accent">Dry Rate (Full-to-Full Actuals)</span>
+              </div>
+              <div class="d-flex justify-content-between py-3 mb-3">
+                <span class="fs-5 fw-bold">Estimated Rental Total:</span>
+                <span class="h2 font-mono fw-bold text-accent mb-0" id="calcTotalEstimateDisplay">₹5,600</span>
+              </div>
+
+              <div class="p-3 rounded mb-4" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);">
+                <div class="d-flex justify-content-between small font-mono">
+                  <span class="text-white-50">Refundable Security Deposit (Returned at Checkout):</span>
+                  <strong class="text-white" id="calcDepositDisplay">₹15,000</strong>
+                </div>
+              </div>
+
+              <a href="contact.html#enquiry-form" id="calcBookQuoteLink" class="btn-agri-primary w-100">
+                <i class="bi bi-calendar2-check-fill"></i> Proceed with This Configuration in Enquiry Form
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FUEL, OPERATOR, DELIVERY, SECURITY DEPOSIT & RENTAL CONDITIONS -->
+    <section class="section-padding" id="rental-conditions">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="eyebrow-tag"><i class="bi bi-file-earmark-ruled-fill"></i> Operational Policies &amp; Conditions</span>
+          <h2 class="section-title">Mandatory Rental Terms &amp; Inclusions</h2>
+          <p class="section-subtitle mx-auto">
+            To maintain transparent pricing for every farmer, fuel, operator wages, transport, and insurance responsibilities are clearly defined below.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-xl-4">
+            <div class="policy-disclosure-card">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-fuel-pump-diesel-fill fs-3 text-accent"></i>
+                <h3 class="h4 font-heading text-uppercase mb-0 d-block">1. Fuel Policy (Not Included)</h3>
+              </div>
+              <p class="small text-secondary-custom mb-0 d-block">
+                All listed daily, weekly, and monthly rates are <strong>Dry Rates (Fuel Excluded)</strong>. Tractors, harvesters, and diesel pumps are dispatched with a 100% full, sealed fuel tank. Clients must either return the unit with a full tank of clean High-Speed Diesel (HSD) or pay for actual consumed litres at current depot pump rates.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="policy-disclosure-card">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-person-badge-fill fs-3 text-accent"></i>
+                <h3 class="h4 font-heading text-uppercase mb-0 d-block">2. Operator Inclusion (Optional)</h3>
+              </div>
+              <p class="small text-secondary-custom mb-0 d-block">
+                Base rates cover bare machinery for qualified self-drive operators. If you require an IronField-certified tractor operator, configure it during booking at <strong>₹950 per 8-hour shift</strong> (or <strong>₹1,400/day</strong> for specialized Claas combine harvester operators).
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="policy-disclosure-card">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-truck-flatbed fs-3 text-accent"></i>
+                <h3 class="h4 font-heading text-uppercase mb-0 d-block">3. Delivery &amp; Transportation</h3>
+              </div>
+              <p class="small text-secondary-custom mb-0 d-block">
+                Yard pickup and return at our NH-44 Karnal hub is <strong>free of charge</strong> (and free within a 10 km radius for weekly contracts). Beyond 10 km, flatbed trailer or tractor-towed delivery is billed at <strong>₹45 per km</strong> (one-way loaded distance).
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="policy-disclosure-card">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-shield-lock-fill fs-3 text-accent"></i>
+                <h3 class="h4 font-heading text-uppercase mb-0 d-block">4. Refundable Security Deposit</h3>
+              </div>
+              <p class="small text-secondary-custom mb-0 d-block">
+                A refundable security deposit (₹3,500–₹10,000 for implements; ₹8,000–₹20,000 for tractors; ₹35,000 for combine harvesters) plus original Aadhaar + Kisan Credit Card / Land Passbook verification is required prior to dispatch. Refunded within 2 hours of clean return inspection.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="policy-disclosure-card">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-speedometer2 fs-3 text-accent"></i>
+                <h3 class="h4 font-heading text-uppercase mb-0 d-block">5. Engine Hour Meter &amp; Wear</h3>
+              </div>
+              <p class="small text-secondary-custom mb-0 d-block">
+                Daily tractor and harvester rentals include <strong>8 digital engine hours</strong> per 24-hour period. Routine blade/shovel edge wear in normal agricultural soil is covered by IronField; damage from rocks, tree stumps, or unauthorized road haulage is chargeable.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <div class="policy-disclosure-card">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-umbrella-fill fs-3 text-accent"></i>
+                <h3 class="h4 font-heading text-uppercase mb-0 d-block">6. Insurance &amp; Field Liability</h3>
+              </div>
+              <p class="small text-secondary-custom mb-0 d-block">
+                All self-propelled tractors and harvesters carry valid commercial third-party motor insurance. However, crop insurance, operator personal accident cover (when self-operated), and negligent mechanical abuse are not included unless a separate damage-waiver rider is signed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. REQUEST A CUSTOM QUOTE CTA -->
+    <section class="section-padding-sm" style="background:linear-gradient(100deg, #142f23 0%, #1d4432 100%);color:#ffffff;border-top:3px solid var(--clr-accent);">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-8">
+            <span class="eyebrow-tag eyebrow-dark"><i class="bi bi-briefcase-fill"></i> FPO &amp; Commercial Contracting</span>
+            <h2 class="section-title text-white mb-2">Need Multi-Machine or Full-Season Custom Rates?</h2>
+            <p class="text-white-50 mb-0">
+              Request a customized tariff sheet for 100+ acre land preparation contracts, FPO member clusters, or long-term seasonal leasing.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="contact.html?equipment=custom-multi-machine#enquiry-form" class="btn-agri-primary">
+              <i class="bi bi-file-earmark-spreadsheet-fill"></i> Request a Custom Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MULTI-COLUMN FOOTER (WHITE BG IN LIGHT MODE) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="navbar-brand-agri mb-3" href="index.html">
+            <span class="brand-emblem"><i class="bi bi-gear-wide-connected"></i></span>
+            <span class="brand-text-wrap">
+              <span class="brand-title footer-brand-title">IRONFIELD</span>
+              <span class="brand-subtitle footer-brand-sub">Agri Machinery Rentals</span>
+            </span>
+          </a>
+          <p class="small footer-text mb-3">
+            Institutional-grade tractor, tillage, planting, and harvesting equipment rentals serving progressive farmers, agricultural contractors, and FPOs with transparent INR rates and 50-point inspected machinery.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://wa.me/919876543210" data-whatsapp-link class="footer-social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="tel:+919876543210" data-phone-link class="footer-social-btn" aria-label="Phone"><i class="bi bi-telephone-fill"></i></a>
+            <a href="mailto:dispatch@ironfieldagri.in" data-email-link class="footer-social-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="https://www.google.com/maps" data-directions-link class="footer-social-btn" aria-label="Directions"><i class="bi bi-geo-alt-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small text-accent"></i>Home 1 (Field Power)</a></li>
+            <li><a href="home-2.html"><i class="bi bi-chevron-right small text-accent"></i>Home 2 (Fleet Matrix)</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-accent"></i>About IronField</a></li>
+            <li><a href="equipment.html"><i class="bi bi-chevron-right small text-accent"></i>Equipment Catalogue</a></li>
+            <li><a href="rates.html"><i class="bi bi-chevron-right small text-accent"></i>Rental Rates (INR)</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small text-accent"></i>Contact &amp; Enquiry</a></li>
+            <li><a href="dashboard.html"><i class="bi bi-chevron-right small text-accent"></i>Farmer Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5>Equipment Fleet</h5>
+          <ul class="footer-links">
+            <li><a href="equipment.html?category=tractors"><i class="bi bi-chevron-right small text-accent"></i>4WD Heavy &amp; Utility Tractors</a></li>
+            <li><a href="equipment.html?category=land-prep"><i class="bi bi-chevron-right small text-accent"></i>Rotavators &amp; Reversible Ploughs</a></li>
+            <li><a href="equipment.html?category=planting-harvesting"><i class="bi bi-chevron-right small text-accent"></i>Zero-Till Drills &amp; Planters</a></li>
+            <li><a href="equipment.html?category=planting-harvesting&sub=Harvesters"><i class="bi bi-chevron-right small text-accent"></i>Combine Harvesters &amp; Threshers</a></li>
+            <li><a href="equipment.html?category=other-machinery"><i class="bi bi-chevron-right small text-accent"></i>Laser Levelers, Trailers &amp; Pumps</a></li>
+            <li><a href="login.html"><i class="bi bi-chevron-right small text-accent"></i>Farmer / Client Login</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Central Machinery Yard</h5>
+          <ul class="list-unstyled small footer-text mb-0">
+            <li class="mb-2 d-flex gap-2">
+              <i class="bi bi-geo-alt-fill text-accent mt-1"></i>
+              <span>Plot 44, Agro-Industrial Machinery Park, NH-44 Bypass, Karnal, Haryana 132001</span>
+            </li>
+            <li class="mb-2 d-flex gap-2">
+              <i class="bi bi-telephone-fill text-accent mt-1"></i>
+              <a href="tel:+919876543210" data-phone-link class="footer-contact-link text-decoration-none">+91 98765 43210 (Dispatch Desk)</a>
+            </li>
+            <li class="mb-2 d-flex gap-2">
+              <i class="bi bi-envelope-fill text-accent mt-1"></i>
+              <a href="mailto:dispatch@ironfieldagri.in" data-email-link class="footer-contact-link text-decoration-none">dispatch@ironfieldagri.in</a>
+            </li>
+            <li class="d-flex gap-2">
+              <i class="bi bi-clock-fill text-accent mt-1"></i>
+              <span>Mon–Sat: 06:00 AM – 08:00 PM<br>Harvest Season: 24x7 Field Support</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div>&copy; 2026 IronField Agri Rentals Pvt. Ltd. All Rights Reserved. Sample rates &amp; availability for commercial template demonstration.</div>
+        <div class="d-flex gap-3">
+          <a href="rates.html#rental-conditions">Rental Policy</a>
+          <a href="login.html">Client Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

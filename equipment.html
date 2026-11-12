@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipment Catalogue | IRONFIELD Tractor &amp; Farm Machinery Rentals</title>
+  <meta name="description" content="Browse 17+ heavy-duty tractors, rotavators, reversible ploughs, seed drills, pneumatic planters, combine harvesters, sprayers, and diesel pumps with INR rental rates.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Design System CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Mandatory Sticky Navigation Bar -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg site-navbar" aria-label="Main Navigation">
+      <div class="container">
+        <a class="navbar-brand-agri" href="index.html">
+          <span class="brand-emblem"><i class="bi bi-gear-wide-connected"></i></span>
+          <span class="brand-text-wrap">
+            <span class="brand-title">IRONFIELD</span>
+            <span class="brand-subtitle">Agri Machinery Rentals</span>
+          </span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 d-lg-none">
+          <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
+          <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle Light/Dark Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="navbar-toggler navbar-toggler-agri" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbarCollapse">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                <li>
+                  <a class="dropdown-item" href="index.html">
+                    <div>
+                      <span>Home 1 — Field Power</span>
+                      <small class="dropdown-item-sub">Cinematic Fleet &amp; Seasonal Showcase</small>
+                    </div>
+                    <i class="bi bi-arrow-right-short fs-5"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="home-2.html">
+                    <div>
+                      <span>Home 2 — Fleet Matrix</span>
+                      <small class="dropdown-item-sub">Editorial Specs &amp; Live Rate Estimator</small>
+                    </div>
+                    <i class="bi bi-arrow-right-short fs-5"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="equipment.html">Equipment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rates.html">Rates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 navbar-actions-wrap">
+            <button type="button" class="rtl-toggle-btn d-none d-lg-inline-flex" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
+            <button type="button" class="theme-toggle-btn d-none d-lg-inline-flex" data-theme-toggle aria-label="Toggle Light/Dark Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <a href="signup.html" class="btn-agri-primary btn-nav-cta w-100 w-lg-auto">
+              <i class="bi bi-person-plus-fill"></i> Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. PAGE HERO BANNER (UNIFORM HEIGHT) -->
+    <section class="page-hero-banner">
+      <img src="assets/images/banner-equipment-fleet.jpg" alt="IronField Commercial Tractor &amp; Agricultural Machinery Fleet" class="page-hero-bg">
+      <div class="page-hero-overlay"></div>
+      <div class="container position-relative z-2">
+        <div class="row g-3 align-items-center">
+          <div class="col-lg-8">
+            <span class="eyebrow-tag eyebrow-dark"><i class="bi bi-grid-3x3-gap-fill"></i> 2026 Commercial Machinery Fleet</span>
+            <h1 class="hero-headline mb-2" style="font-size:clamp(2rem, 3.8vw, 3.2rem);">
+              Tractor &amp; Farm Equipment <span>Catalogue</span>
+            </h1>
+            <p class="text-white-50 mb-0" style="max-width:650px;">
+              Inspect horsepower ratings, PTO speeds, working widths, and transparent daily, weekly, and monthly INR tariffs across four fleet divisions.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <div class="d-inline-block p-3 rounded text-start" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);">
+              <div class="font-mono small text-accent">FLEET SUMMARY</div>
+              <div class="h4 font-heading text-uppercase text-white mb-0">17 Models &bull; 15 Sub-Types</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. EDITORIAL FLAGSHIP MACHINERY SPOTLIGHT (NON-GENERIC PRESENTATION) -->
+    <section class="section-padding-sm bg-surface-alt border-bottom">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 gap-2">
+          <div>
+            <span class="eyebrow-tag"><i class="bi bi-stars"></i> Editorial Fleet Spotlight</span>
+            <h2 class="h2 font-heading text-uppercase mb-0">Flagship Heavy-Duty Power &amp; Harvest Units</h2>
+          </div>
+          <span class="small font-mono text-muted-custom">Priority field support included on all flagship dispatches</span>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Flagship 1 (Big Card: 1 per row in tab & 1024px) -->
+          <div class="col-xl-6">
+            <div class="editorial-flagship-card h-100">
+              <div class="row g-0 h-100">
+                <div class="col-md-5 position-relative">
+                  <img src="assets/images/tractor-jd-5310.jpg" alt="John Deere 5310 GearPro 4WD" class="editorial-flagship-img">
+                  <span class="badge bg-warning text-dark font-mono position-absolute top-0 start-0 m-2">HEAVY 4WD FLAGSHIP</span>
+                </div>
+                <div class="col-md-7 p-4 d-flex flex-column justify-content-between">
+                  <div>
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                      <span class="font-mono small text-muted-custom">JOHN DEERE &bull; 5310 TREM IV</span>
+                      <span class="status-pill status-available">4 Units Ready</span>
+                    </div>
+                    <h3 class="h3 font-heading text-uppercase mb-2 d-block">John Deere 5310 GearPro 4WD (57 HP)</h3>
+                    <p class="small text-secondary-custom mb-3 d-block">
+                      Turbocharged 3-cylinder PowerTech engine with 12F+4R CollarShift transmission and 2,500 kg Category-II hydraulics for deep reversible ploughing and laser leveling.
+                    </p>
+                    <div class="row g-2 mb-3 font-mono small">
+                      <div class="col-4">
+                        <div class="p-2 rounded bg-surface-alt border text-center">
+                          <span class="d-block text-muted-custom" style="font-size:0.68rem;">DAILY</span>
+                          <strong class="text-accent">₹2,800</strong>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="p-2 rounded bg-surface-alt border text-center">
+                          <span class="d-block text-muted-custom" style="font-size:0.68rem;">WEEKLY</span>
+                          <strong>₹17,500</strong>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="p-2 rounded bg-surface-alt border text-center">
+                          <span class="d-block text-muted-custom" style="font-size:0.68rem;">MONTHLY</span>
+                          <strong>₹62,000</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <button type="button" class="btn-agri-outline py-2 px-3 flex-fill" style="font-size:0.9rem;" data-view-details="john-deere-5310-gearpro-4wd">
+                      View Details
+                    </button>
+                    <a href="contact.html?equipment=john-deere-5310-gearpro-4wd#enquiry-form" class="btn-agri-primary py-2 px-3 flex-fill" style="font-size:0.9rem;">
+                      Rent This Equipment
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flagship 2 (Big Card: 1 per row in tab & 1024px) -->
+          <div class="col-xl-6">
+            <div class="editorial-flagship-card h-100" style="border-left-color:var(--clr-accent);">
+              <div class="row g-0 h-100">
+                <div class="col-md-5 position-relative">
+                  <img src="assets/images/equip-combine-harvester.jpg" alt="Claas Crop Tiger 40 Terra Trac Combine Harvester" class="editorial-flagship-img">
+                  <span class="badge bg-danger font-mono position-absolute top-0 start-0 m-2">HARVEST FLAGSHIP</span>
+                </div>
+                <div class="col-md-7 p-4 d-flex flex-column justify-content-between">
+                  <div>
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                      <span class="font-mono small text-muted-custom">CLAAS &bull; TERRA TRAC</span>
+                      <span class="status-pill status-limited">Book 48h Ahead</span>
+                    </div>
+                    <h3 class="h3 font-heading text-uppercase mb-2 d-block">Claas Crop Tiger 40 Combine Harvester</h3>
+                    <p class="small text-secondary-custom mb-3 d-block">
+                      76 HP self-propelled rubber-track combine harvester with Tangential Axial Rotor (TAR) technology and 7 ft cutter bar for wet paddy, wheat, soybean, and pulses.
+                    </p>
+                    <div class="row g-2 mb-3 font-mono small">
+                      <div class="col-4">
+                        <div class="p-2 rounded bg-surface-alt border text-center">
+                          <span class="d-block text-muted-custom" style="font-size:0.68rem;">DAILY</span>
+                          <strong class="text-accent">₹8,500</strong>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="p-2 rounded bg-surface-alt border text-center">
+                          <span class="d-block text-muted-custom" style="font-size:0.68rem;">WEEKLY</span>
+                          <strong>₹54,000</strong>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="p-2 rounded bg-surface-alt border text-center">
+                          <span class="d-block text-muted-custom" style="font-size:0.68rem;">MONTHLY</span>
+                          <strong>₹1,95,000</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <button type="button" class="btn-agri-outline py-2 px-3 flex-fill" style="font-size:0.9rem;" data-view-details="claas-crop-tiger-40-terra-trac-harvester">
+                      View Details
+                    </button>
+                    <a href="contact.html?equipment=claas-crop-tiger-40-terra-trac-harvester#enquiry-form" class="btn-agri-primary py-2 px-3 flex-fill" style="font-size:0.9rem;">
+                      Rent This Equipment
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. INTERACTIVE CATEGORY FILTERS & CATALOGUE GRID -->
+    <section class="section-padding" id="catalogue-filter-section">
+      <div class="container">
+        <!-- Main Category Filter Bar -->
+        <div class="p-4 rounded bg-surface border mb-4 shadow-sm">
+          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 pb-3 mb-3 border-bottom">
+            <div>
+              <span class="font-mono small text-uppercase text-muted-custom d-block mb-1">Filter by Primary Division</span>
+              <div class="d-flex flex-wrap gap-2" role="group" aria-label="Equipment Category Filters">
+                <button type="button" class="filter-pill-btn active" data-filter-category="all">
+                  All Equipment (17)
+                </button>
+                <button type="button" class="filter-pill-btn" data-filter-category="tractors">
+                  <i class="bi bi-truck-front me-1"></i>Tractors (5)
+                </button>
+                <button type="button" class="filter-pill-btn" data-filter-category="land-prep">
+                  <i class="bi bi-gear-wide-connected me-1"></i>Land Preparation (4)
+                </button>
+                <button type="button" class="filter-pill-btn" data-filter-category="planting-harvesting">
+                  <i class="bi bi-flower1 me-1"></i>Planting &amp; Harvesting (4)
+                </button>
+                <button type="button" class="filter-pill-btn" data-filter-category="other-machinery">
+                  <i class="bi bi-tools me-1"></i>Other Machinery (4)
+                </button>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <span class="badge bg-dark font-mono py-2 px-3" id="equipmentResultCount">17 Machines Displayed</span>
+              <div class="btn-group" role="group" aria-label="Layout View Switcher">
+                <button type="button" class="theme-toggle-btn active" data-view-mode="grid" title="Grid View" aria-label="Grid View">
+                  <i class="bi bi-grid-3x3-gap-fill"></i>
+                </button>
+                <button type="button" class="theme-toggle-btn" data-view-mode="list" title="Technical List View" aria-label="Technical List View">
+                  <i class="bi bi-list-ul"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Category Quick Pills (All 15 Required Sub-Types) -->
+          <div class="mb-3">
+            <span class="font-mono small text-uppercase text-muted-custom d-block mb-2">Quick Filter by Equipment Sub-Type:</span>
+            <div class="d-flex flex-wrap gap-1">
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono active" data-filter-sub="all">All Sub-Types</button>
+              <!-- Tractors -->
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Heavy-Duty Tractors">Heavy-Duty Tractors</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Utility Tractors">Utility Tractors</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Compact Tractors">Compact Tractors</button>
+              <!-- Land Prep -->
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Rotavators">Rotavators</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Cultivators">Cultivators</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Disc Harrows">Disc Harrows</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Ploughs">Ploughs</button>
+              <!-- Planting & Harvesting -->
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Seed Drills">Seed Drills</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Planters">Planters</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Harvesters">Harvesters</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Threshers">Threshers</button>
+              <!-- Other Agricultural Machinery -->
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Trailers">Trailers</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Sprayers">Sprayers</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Water Pumps">Water Pumps</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary font-mono" data-filter-sub="Agricultural Implements">Agricultural Implements</button>
+            </div>
+          </div>
+
+          <!-- Search, Availability & Sort Row -->
+          <div class="row g-3 align-items-end pt-2">
+            <div class="col-md-5">
+              <label for="equipmentSearchInput" class="form-label-agri small font-mono">Search by Brand, Model, HP or Specification</label>
+              <input type="search" id="equipmentSearchInput" class="form-control-agri" placeholder="Search e.g. John Deere, Mahindra, 50 HP, Lemken, Kirloskar...">
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <label for="equipmentAvailabilityFilter" class="form-label-agri small font-mono">Availability Status</label>
+              <select id="equipmentAvailabilityFilter" class="form-select-agri">
+                <option value="all">All Statuses</option>
+                <option value="available">Available Now in Yard</option>
+              </select>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <label for="equipmentSortFilter" class="form-label-agri small font-mono">Sort Catalogue By</label>
+              <select id="equipmentSortFilter" class="form-select-agri">
+                <option value="featured">Featured &amp; Category Order</option>
+                <option value="price-asc">Daily Rate: Low to High (₹)</option>
+                <option value="price-desc">Daily Rate: High to Low (₹)</option>
+                <option value="name-asc">Equipment Name (A–Z)</option>
+              </select>
+            </div>
+            <div class="col-md-1">
+              <button type="button" id="resetEquipmentFilters" class="btn-agri-outline w-100 py-2 px-2" title="Reset All Filters">
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment Grid Container (Populated by main.js) -->
+        <div class="row g-4 justify-content-center equipment-grid-container" id="equipmentCatalogueGrid"></div>
+      </div>
+    </section>
+
+    <!-- 4. TRACTOR-TO-IMPLEMENT TECHNICAL MATCHING GUIDE -->
+    <section class="section-padding-sm bg-surface-alt border-top">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-xl-5">
+            <span class="eyebrow-tag"><i class="bi bi-rulers"></i> Engineering Match Guide</span>
+            <h2 class="h2 font-heading text-uppercase mb-2">Tractor Horsepower &amp; Implement Compatibility Matrix</h2>
+            <p class="text-secondary-custom small mb-3">
+              Renting a standalone implement for your existing tractor? Use our field engineer reference chart to verify required PTO horsepower and hydraulic valve configurations.
+            </p>
+            <a href="contact.html#enquiry-form" class="btn-agri-forest">
+              <i class="bi bi-headset"></i> Consult Fleet Engineer for Implement Match
+            </a>
+          </div>
+
+          <div class="col-xl-7">
+            <div class="pricing-table-wrapper">
+              <div class="table-responsive">
+                <table class="table-agri">
+                  <thead>
+                    <tr>
+                      <th>Implement / Attachment</th>
+                      <th>Min. Tractor HP</th>
+                      <th>PTO / Hydraulics Needed</th>
+                      <th>Avg. Output</th>
+                    </tr>
+                  </thead>
+                  <tbody class="small font-mono">
+                    <tr>
+                      <td><strong>Shaktiman 7ft Rotavator</strong></td>
+                      <td>50 – 65 HP</td>
+                      <td>540 RPM PTO + Cat-II 3-Point</td>
+                      <td>1.5 – 2.0 Acres/Hr</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Lemken 2-Furrow Reversible Plough</strong></td>
+                      <td>52 – 68 HP (4WD)</td>
+                      <td>Double-Acting Aux Hydraulic Valve</td>
+                      <td>0.9 – 1.2 Acres/Hr</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Maschio 4-Row Pneumatic Planter</strong></td>
+                      <td>50 – 65 HP</td>
+                      <td>540 RPM PTO Vacuum Drive</td>
+                      <td>2.2 – 2.8 Acres/Hr</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Apogee 7ft Laser Land Leveler</strong></td>
+                      <td>50 – 65 HP</td>
+                      <td>12V Battery + Aux Hydraulic Port</td>
+                      <td>1.2 – 1.8 Acres/Hr</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Mitra 600L Orchard Turbo Sprayer</strong></td>
+                      <td>24 – 35 HP Compact</td>
+                      <td>540 RPM PTO + Narrow Track</td>
+                      <td>2.5 – 3.5 Acres/Hr</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MULTI-COLUMN FOOTER (WHITE BG IN LIGHT MODE) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="navbar-brand-agri mb-3" href="index.html">
+            <span class="brand-emblem"><i class="bi bi-gear-wide-connected"></i></span>
+            <span class="brand-text-wrap">
+              <span class="brand-title footer-brand-title">IRONFIELD</span>
+              <span class="brand-subtitle footer-brand-sub">Agri Machinery Rentals</span>
+            </span>
+          </a>
+          <p class="small footer-text mb-3">
+            Institutional-grade tractor, tillage, planting, and harvesting equipment rentals serving progressive farmers, agricultural contractors, and FPOs with transparent INR rates and 50-point inspected machinery.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://wa.me/919876543210" data-whatsapp-link class="footer-social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="tel:+919876543210" data-phone-link class="footer-social-btn" aria-label="Phone"><i class="bi bi-telephone-fill"></i></a>
+            <a href="mailto:dispatch@ironfieldagri.in" data-email-link class="footer-social-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="https://www.google.com/maps" data-directions-link class="footer-social-btn" aria-label="Directions"><i class="bi bi-geo-alt-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small text-accent"></i>Home 1 (Field Power)</a></li>
+            <li><a href="home-2.html"><i class="bi bi-chevron-right small text-accent"></i>Home 2 (Fleet Matrix)</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-accent"></i>About IronField</a></li>
+            <li><a href="equipment.html"><i class="bi bi-chevron-right small text-accent"></i>Equipment Catalogue</a></li>
+            <li><a href="rates.html"><i class="bi bi-chevron-right small text-accent"></i>Rental Rates (INR)</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small text-accent"></i>Contact &amp; Enquiry</a></li>
+            <li><a href="dashboard.html"><i class="bi bi-chevron-right small text-accent"></i>Farmer Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5>Equipment Fleet</h5>
+          <ul class="footer-links">
+            <li><a href="equipment.html?category=tractors"><i class="bi bi-chevron-right small text-accent"></i>4WD Heavy &amp; Utility Tractors</a></li>
+            <li><a href="equipment.html?category=land-prep"><i class="bi bi-chevron-right small text-accent"></i>Rotavators &amp; Reversible Ploughs</a></li>
+            <li><a href="equipment.html?category=planting-harvesting"><i class="bi bi-chevron-right small text-accent"></i>Zero-Till Drills &amp; Planters</a></li>
+            <li><a href="equipment.html?category=planting-harvesting&sub=Harvesters"><i class="bi bi-chevron-right small text-accent"></i>Combine Harvesters &amp; Threshers</a></li>
+            <li><a href="equipment.html?category=other-machinery"><i class="bi bi-chevron-right small text-accent"></i>Laser Levelers, Trailers &amp; Pumps</a></li>
+            <li><a href="login.html"><i class="bi bi-chevron-right small text-accent"></i>Farmer / Client Login</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Central Machinery Yard</h5>
+          <ul class="list-unstyled small footer-text mb-0">
+            <li class="mb-2 d-flex gap-2">
+              <i class="bi bi-geo-alt-fill text-accent mt-1"></i>
+              <span>Plot 44, Agro-Industrial Machinery Park, NH-44 Bypass, Karnal, Haryana 132001</span>
+            </li>
+            <li class="mb-2 d-flex gap-2">
+              <i class="bi bi-telephone-fill text-accent mt-1"></i>
+              <a href="tel:+919876543210" data-phone-link class="footer-contact-link text-decoration-none">+91 98765 43210 (Dispatch Desk)</a>
+            </li>
+            <li class="mb-2 d-flex gap-2">
+              <i class="bi bi-envelope-fill text-accent mt-1"></i>
+              <a href="mailto:dispatch@ironfieldagri.in" data-email-link class="footer-contact-link text-decoration-none">dispatch@ironfieldagri.in</a>
+            </li>
+            <li class="d-flex gap-2">
+              <i class="bi bi-clock-fill text-accent mt-1"></i>
+              <span>Mon–Sat: 06:00 AM – 08:00 PM<br>Harvest Season: 24x7 Field Support</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div>&copy; 2026 IronField Agri Rentals Pvt. Ltd. All Rights Reserved. Sample rates &amp; availability for commercial template demonstration.</div>
+        <div class="d-flex gap-3">
+          <a href="rates.html#rental-conditions">Rental Policy</a>
+          <a href="login.html">Client Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us &amp; Maintenance Standards | IRONFIELD Agri Rentals</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <meta name="description" content="Learn about IronField Agri Rentals—our 65+ unit heavy agricultural machinery fleet, 50-point pre-dispatch inspection protocol, and 4-hour on-field service guarantee.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Design System CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Mandatory Sticky Navigation Bar -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg site-navbar" aria-label="Main Navigation">
+      <div class="container">
+        <a class="navbar-brand-agri" href="index.html">
+          <span class="brand-emblem"><i class="bi bi-gear-wide-connected"></i></span>
+          <span class="brand-text-wrap">
+            <span class="brand-title">IRONFIELD</span>
+            <span class="brand-subtitle">Agri Machinery Rentals</span>
+          </span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 d-lg-none">
+          <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
+          <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle Light/Dark Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="navbar-toggler navbar-toggler-agri" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbarCollapse">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                <li>
+                  <a class="dropdown-item" href="index.html">
+                    <div>
+                      <span>Home 1 — Field Power</span>
+                      <small class="dropdown-item-sub">Cinematic Fleet &amp; Seasonal Showcase</small>
+                    </div>
+                    <i class="bi bi-arrow-right-short fs-5"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="home-2.html">
+                    <div>
+                      <span>Home 2 — Fleet Matrix</span>
+                      <small class="dropdown-item-sub">Editorial Specs &amp; Live Rate Estimator</small>
+                    </div>
+                    <i class="bi bi-arrow-right-short fs-5"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipment.html">Equipment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rates.html">Rates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 navbar-actions-wrap">
+            <button type="button" class="rtl-toggle-btn d-none d-lg-inline-flex" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
+            <button type="button" class="theme-toggle-btn d-none d-lg-inline-flex" data-theme-toggle aria-label="Toggle Light/Dark Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <a href="signup.html" class="btn-agri-primary btn-nav-cta w-100 w-lg-auto">
+              <i class="bi bi-person-plus-fill"></i> Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. PAGE HERO BANNER (UNIFORM HEIGHT) -->
+    <section class="page-hero-banner">
+      <img src="assets/images/banner-about-workshop.jpg" alt="IronField Agricultural Machinery Workshop and Yard" class="page-hero-bg">
+      <div class="page-hero-overlay"></div>
+      <div class="container position-relative z-2">
+        <div class="row g-3 align-items-center">
+          <div class="col-lg-8">
+            <span class="eyebrow-tag eyebrow-dark"><i class="bi bi-building-gear"></i> Established 2016 &bull; Karnal Agro-Industrial Hub</span>
+            <h1 class="hero-headline mb-2" style="font-size:clamp(2rem, 3.8vw, 3.2rem);">
+              Built to Keep <span>Indian Farmland</span> Moving
+            </h1>
+            <p class="text-white-50 mb-0" style="max-width:650px;">
+              Connecting farmers and agricultural contractors with tier-one company-owned tractors, harvesters, and 50-point inspected implements.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="contact.html#enquiry-form" class="btn-agri-primary">
+              <i class="bi bi-calendar2-check-fill"></i> Partner With Our Fleet
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. COMPANY INTRODUCTION & AGRICULTURAL RENTAL EXPERTISE -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-xl-6">
+            <span class="eyebrow-tag"><i class="bi bi-compass-fill"></i> Company Introduction</span>
+            <h2 class="section-title">Institutional-Grade Machinery Without Ownership Burden</h2>
+            <p class="text-secondary-custom mb-3">
+              Purchasing a 65 HP 4WD tractor, hydraulic reversible plough, laser land leveler, and pneumatic planter requires upwards of ₹22–₹28 Lakhs in capital—machinery that often sits idle for 260+ days a year on individual farms.
+            </p>
+            <p class="text-secondary-custom mb-4">
+              Founded by agricultural mechanical engineers and third-generation growers in Karnal, <strong>IronField Agri Rentals</strong> operates a centralized, company-owned fleet of 65+ late-model machines from John Deere, Mahindra, Swaraj, New Holland, Kubota, Claas, Lemken, Maschio Gaspardo, and Shaktiman. We maintain every machine under strict OEM service intervals so you experience new-machine productivity at a fraction of ownership cost.
+            </p>
+
+            <div class="row g-3 mb-4 justify-content-center">
+              <div class="col-6 col-md-6 col-xl-3">
+                <div class="p-3 rounded bg-surface-alt border text-center h-100">
+                  <strong class="font-heading fs-2 text-accent d-block">10+</strong>
+                  <span class="small font-mono text-muted-custom d-block">Years Active</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-xl-3">
+                <div class="p-3 rounded bg-surface-alt border text-center h-100">
+                  <strong class="font-heading fs-2 text-accent d-block">65+</strong>
+                  <span class="small font-mono text-muted-custom d-block">Owned Fleet Units</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-xl-3">
+                <div class="p-3 rounded bg-surface-alt border text-center h-100">
+                  <strong class="font-heading fs-2 text-accent d-block">1,400+</strong>
+                  <span class="small font-mono text-muted-custom d-block">Farms Served</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-xl-3">
+                <div class="p-3 rounded bg-surface-alt border text-center h-100">
+                  <strong class="font-heading fs-2 text-accent d-block">85,000+</strong>
+                  <span class="small font-mono text-muted-custom d-block">Acres Cultivated</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="equipment.html" class="btn-agri-forest">Explore Our Machinery</a>
+              <a href="rates.html" class="btn-agri-outline">Review Rental Tariff</a>
+            </div>
+          </div>
+
+          <div class="col-xl-6">
+            <div class="position-relative">
+              <img src="assets/images/banner-equipment-fleet.jpg" alt="IronField Heavy Tractor Fleet in Operation" class="rounded border shadow-md w-100" style="aspect-ratio:16/11;object-fit:cover;">
+              <div class="p-4 rounded bg-charcoal text-white border border-secondary mt-3 shadow-sm">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="brand-emblem flex-shrink-0"><i class="bi bi-patch-check-fill"></i></span>
+                  <div>
+                    <h3 class="h5 font-heading text-uppercase text-white mb-1 d-block">100% Company-Owned &amp; Yard-Serviced Fleet</h3>
+                    <p class="small text-white-50 mb-0 d-block">
+                      Unlike aggregator apps that list unverified third-party tractors, every machine in our catalogue is physically stationed, calibrated, and load-tested at our NH-44 depot.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COMMITMENT TO RELIABLE MACHINERY & EQUIPMENT MAINTENANCE STANDARDS -->
+    <section class="section-padding bg-surface-alt border-top border-bottom">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="eyebrow-tag"><i class="bi bi-tools"></i> Engineering Quality Control</span>
+          <h2 class="section-title">Our 50-Point Equipment Maintenance Standards</h2>
+          <p class="section-subtitle mx-auto">
+            Every tractor, harvester, and implement passes through our four-stage mechanical bay checklist before handover to the next farmer.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-box-agri">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="feature-icon-badge mb-0"><i class="bi bi-speedometer"></i></span>
+                <span class="font-mono small text-muted-custom">BAY CHECK 01</span>
+              </div>
+              <h3 class="h4 font-heading text-uppercase d-block">Engine &amp; PTO Dynamometer Check</h3>
+              <p class="small text-secondary-custom mb-0 d-block">
+                Compression check, radiator coolant pressure test, dual air-filter cleaning, and PTO shaft spline torque inspection at 540/540E RPM.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-box-agri">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="feature-icon-badge mb-0"><i class="bi bi-droplet-half"></i></span>
+                <span class="font-mono small text-muted-custom">BAY CHECK 02</span>
+              </div>
+              <h3 class="h4 font-heading text-uppercase d-block">Hydraulics &amp; Auxiliary Valve Audit</h3>
+              <p class="small text-secondary-custom mb-0 d-block">
+                3-point ADDC lift pressure test, quick-coupler O-ring replacement, and transmission/hydraulic oil viscosity verification for reversible ploughs and trailers.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-box-agri">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="feature-icon-badge mb-0"><i class="bi bi-gear-wide-connected"></i></span>
+                <span class="font-mono small text-muted-custom">BAY CHECK 03</span>
+              </div>
+              <h3 class="h4 font-heading text-uppercase d-block">Blade, Share &amp; Bearing Replacement</h3>
+              <p class="small text-secondary-custom mb-0 d-block">
+                Rotavator boron L-blades, MB plough bar points, and harrow sealed bearings are replaced proactively whenever wear exceeds 25%.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-box-agri">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="feature-icon-badge mb-0"><i class="bi bi-crosshair"></i></span>
+                <span class="font-mono small text-muted-custom">BAY CHECK 04</span>
+              </div>
+              <h3 class="h4 font-heading text-uppercase d-block">Seed &amp; Laser Precision Calibration</h3>
+              <p class="small text-secondary-custom mb-0 d-block">
+                Laser transmitters are bench-calibrated for ±2mm grade accuracy, and seed drill/planter metering rollers are tested for zero seed crushing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CUSTOMER-FIRST APPROACH & WHY FARMERS CHOOSE THE COMPANY -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-xl-5">
+            <img src="assets/images/tractor-newholland-3630.jpg" alt="Customer-First Agricultural Field Support" class="rounded border shadow-sm w-100" style="min-height:380px;object-fit:cover;">
+          </div>
+
+          <div class="col-xl-7">
+            <span class="eyebrow-tag"><i class="bi bi-people-fill"></i> Customer-First Approach</span>
+            <h2 class="section-title">Why Farmers, Contractors &amp; FPOs Trust IronField</h2>
+            <p class="text-secondary-custom mb-4">
+              We treat every rental dispatch as a time-critical agricultural partnership. Our yard timings, billing policies, and field support are built around real farming realities:
+            </p>
+
+            <div class="row g-3 mb-4 justify-content-center">
+              <div class="col-md-6">
+                <div class="p-3 rounded bg-surface border h-100">
+                  <h3 class="h5 font-heading text-uppercase text-accent mb-1 d-block"><i class="bi bi-check2-circle me-1"></i>Honest Dry-Fuel Billing</h3>
+                  <p class="small text-secondary-custom mb-0 d-block">No inflated wet-rate markups. Pay bare machine rent and use your own diesel or settle exact tank actuals.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 rounded bg-surface border h-100">
+                  <h3 class="h5 font-heading text-uppercase text-accent mb-1 d-block"><i class="bi bi-check2-circle me-1"></i>4-Hour Mobile Mechanic SLA</h3>
+                  <p class="small text-secondary-custom mb-0 d-block">Three dedicated mobile service vans carry spare hoses, belts, PTO shafts, and blades directly to your village chak.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 rounded bg-surface border h-100">
+                  <h3 class="h5 font-heading text-uppercase text-accent mb-1 d-block"><i class="bi bi-check2-circle me-1"></i>Rain-Delay Rescheduling</h3>
+                  <p class="small text-secondary-custom mb-0 d-block">If unseasonal heavy rainfall halts field entry before work begins, we shift your booking window at zero penalty.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 rounded bg-surface border h-100">
+                  <h3 class="h5 font-heading text-uppercase text-accent mb-1 d-block"><i class="bi bi-check2-circle me-1"></i>Hands-On Operator Briefing</h3>
+                  <p class="small text-secondary-custom mb-0 d-block">15-minute yard walkthrough on gear range selection, draft control settings, and PTO safety for every self-drive client.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="contact.html#enquiry-form" class="btn-agri-primary">
+              <i class="bi bi-calendar2-check-fill"></i> Send a Rental Enquiry Today
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. STRONG ENQUIRY CTA -->
+    <section class="section-padding-sm" style="background:linear-gradient(100deg, #142f23 0%, #1d4432 100%);color:#ffffff;border-top:3px solid var(--clr-accent);">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-8">
+            <span class="eyebrow-tag eyebrow-dark"><i class="bi bi-truck-front-fill"></i> Visit Our NH-44 Machinery Yard</span>
+            <h2 class="section-title text-white mb-2">Inspect Our Fleet in Person or Reserve Online</h2>
+            <p class="text-white-50 mb-0">
+              Walk through our Karnal yard Mon–Sat (6 AM to 8 PM) to inspect any tractor or implement before booking, or submit your rental dates online right now.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <div class="d-flex flex-wrap gap-3 justify-content-lg-end">
+              <a href="contact.html#enquiry-form" class="btn-agri-primary">
+                <i class="bi bi-send-check-fill"></i> Submit Rental Enquiry
+              </a>
+              <a href="tel:+919876543210" data-phone-link class="btn-agri-outline-light">
+                <i class="bi bi-telephone-fill"></i> Call Yard
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MULTI-COLUMN FOOTER (WHITE BG IN LIGHT MODE) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="navbar-brand-agri mb-3" href="index.html">
+            <span class="brand-emblem"><i class="bi bi-gear-wide-connected"></i></span>
+            <span class="brand-text-wrap">
+              <span class="brand-title footer-brand-title">IRONFIELD</span>
+              <span class="brand-subtitle footer-brand-sub">Agri Machinery Rentals</span>
+            </span>
+          </a>
+          <p class="small footer-text mb-3">
+            Institutional-grade tractor, tillage, planting, and harvesting equipment rentals serving progressive farmers, agricultural contractors, and FPOs with transparent INR rates and 50-point inspected machinery.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://wa.me/919876543210" data-whatsapp-link class="footer-social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="tel:+919876543210" data-phone-link class="footer-social-btn" aria-label="Phone"><i class="bi bi-telephone-fill"></i></a>
+            <a href="mailto:dispatch@ironfieldagri.in" data-email-link class="footer-social-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="https://www.google.com/maps" data-directions-link class="footer-social-btn" aria-label="Directions"><i class="bi bi-geo-alt-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small text-accent"></i>Home 1 (Field Power)</a></li>
+            <li><a href="home-2.html"><i class="bi bi-chevron-right small text-accent"></i>Home 2 (Fleet Matrix)</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-accent"></i>About IronField</a></li>
+            <li><a href="equipment.html"><i class="bi bi-chevron-right small text-accent"></i>Equipment Catalogue</a></li>
+            <li><a href="rates.html"><i class="bi bi-chevron-right small text-accent"></i>Rental Rates (INR)</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small text-accent"></i>Contact &amp; Enquiry</a></li>
+            <li><a href="dashboard.html"><i class="bi bi-chevron-right small text-accent"></i>Farmer Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5>Equipment Fleet</h5>
+          <ul class="footer-links">
+            <li><a href="equipment.html?category=tractors"><i class="bi bi-chevron-right small text-accent"></i>4WD Heavy &amp; Utility Tractors</a></li>
+            <li><a href="equipment.html?category=land-prep"><i class="bi bi-chevron-right small text-accent"></i>Rotavators &amp; Reversible Ploughs</a></li>
+            <li><a href="equipment.html?category=planting-harvesting"><i class="bi bi-chevron-right small text-accent"></i>Zero-Till Drills &amp; Planters</a></li>
+            <li><a href="equipment.html?category=planting-harvesting&sub=Harvesters"><i class="bi bi-chevron-right small text-accent"></i>Combine Harvesters &amp; Threshers</a></li>
+            <li><a href="equipment.html?category=other-machinery"><i class="bi bi-chevron-right small text-accent"></i>Laser Levelers, Trailers &amp; Pumps</a></li>
+            <li><a href="login.html"><i class="bi bi-chevron-right small text-accent"></i>Farmer / Client Login</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Central Machinery Yard</h5>
+          <ul class="list-unstyled small footer-text mb-0">
+            <li class="mb-2 d-flex gap-2">
+              <i class="bi bi-geo-alt-fill text-accent mt-1"></i>
+              <span>Plot 44, Agro-Industrial Machinery Park, NH-44 Bypass, Karnal, Haryana 132001</span>
+            </li>
+            <li class="mb-2 d-flex gap-2">
+              <i class="bi bi-telephone-fill text-accent mt-1"></i>
+              <a href="tel:+919876543210" data-phone-link class="footer-contact-link text-decoration-none">+91 98765 43210 (Dispatch Desk)</a>
+            </li>
+            <li class="mb-2 d-flex gap-2">
+              <i class="bi bi-envelope-fill text-accent mt-1"></i>
+              <a href="mailto:dispatch@ironfieldagri.in" data-email-link class="footer-contact-link text-decoration-none">dispatch@ironfieldagri.in</a>
+            </li>
+            <li class="d-flex gap-2">
+              <i class="bi bi-clock-fill text-accent mt-1"></i>
+              <span>Mon–Sat: 06:00 AM – 08:00 PM<br>Harvest Season: 24x7 Field Support</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div>&copy; 2026 IronField Agri Rentals Pvt. Ltd. All Rights Reserved. Sample rates &amp; availability for commercial template demonstration.</div>
+        <div class="d-flex gap-3">
+          <a href="rates.html#rental-conditions">Rental Policy</a>
+          <a href="login.html">Client Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

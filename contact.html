@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Equipment Rental Enquiry | IRONFIELD Agri Rentals</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <meta name="description" content="Submit a tractor or farm machinery rental enquiry, reach our dispatch yard by phone or WhatsApp, or get directions to our NH-44 Karnal depot.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Design System CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Mandatory Sticky Navigation Bar -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg site-navbar" aria-label="Main Navigation">
+      <div class="container">
+        <a class="navbar-brand-agri" href="index.html">
+          <span class="brand-emblem"><i class="bi bi-gear-wide-connected"></i></span>
+          <span class="brand-text-wrap">
+            <span class="brand-title">IRONFIELD</span>
+            <span class="brand-subtitle">Agri Machinery Rentals</span>
+          </span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 d-lg-none">
+          <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
+          <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle Light/Dark Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="navbar-toggler navbar-toggler-agri" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbarCollapse">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                <li>
+                  <a class="dropdown-item" href="index.html">
+                    <div>
+                      <span>Home 1 — Field Power</span>
+                      <small class="dropdown-item-sub">Cinematic Fleet &amp; Seasonal Showcase</small>
+                    </div>
+                    <i class="bi bi-arrow-right-short fs-5"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="home-2.html">
+                    <div>
+                      <span>Home 2 — Fleet Matrix</span>
+                      <small class="dropdown-item-sub">Editorial Specs &amp; Live Rate Estimator</small>
+                    </div>
+                    <i class="bi bi-arrow-right-short fs-5"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipment.html">Equipment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rates.html">Rates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 navbar-actions-wrap">
+            <button type="button" class="rtl-toggle-btn d-none d-lg-inline-flex" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
+            <button type="button" class="theme-toggle-btn d-none d-lg-inline-flex" data-theme-toggle aria-label="Toggle Light/Dark Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <a href="signup.html" class="btn-agri-primary btn-nav-cta w-100 w-lg-auto">
+              <i class="bi bi-person-plus-fill"></i> Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. PAGE HERO BANNER (UNIFORM HEIGHT) -->
+    <section class="page-hero-banner">
+      <img src="assets/images/banner-contact-ploughing.jpg" alt="Tractor Ploughing Farmland — Contact IronField Dispatch" class="page-hero-bg">
+      <div class="page-hero-overlay"></div>
+      <div class="container position-relative z-2">
+        <div class="row g-3 align-items-center">
+          <div class="col-lg-8">
+            <span class="eyebrow-tag eyebrow-dark"><i class="bi bi-headset"></i> Direct Yard &amp; Field Dispatch Desk</span>
+            <h1 class="hero-headline mb-2" style="font-size:clamp(2rem, 3.8vw, 3.2rem);">
+              Contact &amp; <span>Rental Enquiry</span>
+            </h1>
+            <p class="text-white-50 mb-0" style="max-width:650px;">
+              Submit your required machinery, preferred start date, and village location below, or connect directly with our fleet engineers via phone or WhatsApp.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="https://wa.me/919876543210" data-whatsapp-link class="btn-agri-primary">
+              <i class="bi bi-whatsapp"></i> Chat on WhatsApp Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CONTACT DETAILS & RENTAL ENQUIRY FORM -->
+    <section class="section-padding" id="enquiry-form">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Left Column: Business Address, Phone, Email, WhatsApp, Hours & Social -->
+          <div class="col-xl-5">
+            <span class="eyebrow-tag"><i class="bi bi-geo-alt-fill"></i> Direct Dispatch Channels</span>
+            <h2 class="section-title mb-3">Reach Our Machinery Hub</h2>
+            <p class="text-secondary-custom mb-4">
+              Whether you need a single rotavator for tomorrow morning or a multi-tractor seasonal contract for your FPO, our yard controllers respond rapidly during operating hours.
+            </p>
+
+            <div class="row g-3 mb-4 justify-content-center">
+              <!-- Address -->
+              <div class="col-md-6 col-xl-12">
+                <div class="p-3 rounded bg-surface border d-flex gap-3 align-items-start h-100">
+                  <span class="brand-emblem flex-shrink-0"><i class="bi bi-pin-map-fill"></i></span>
+                  <div>
+                    <span class="font-mono small text-muted-custom text-uppercase d-block">Central Machinery Yard &amp; Office</span>
+                    <strong class="d-block mb-1">IronField Agri Rentals Pvt. Ltd.</strong>
+                    <p class="small text-secondary-custom mb-2 d-block">Plot 44, Agro-Industrial Machinery Park, NH-44 Bypass, Karnal, Haryana 132001</p>
+                    <a href="https://www.google.com/maps" data-directions-link class="small fw-bold text-accent d-inline-block">
+                      <i class="bi bi-compass me-1"></i>Get Google Maps Directions &rarr;
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone Numbers -->
+              <div class="col-md-6 col-xl-12">
+                <div class="p-3 rounded bg-surface border d-flex gap-3 align-items-start h-100">
+                  <span class="brand-emblem flex-shrink-0"><i class="bi bi-telephone-outbound-fill"></i></span>
+                  <div>
+                    <span class="font-mono small text-muted-custom text-uppercase d-block">Direct Dispatch &amp; Breakdown Helpline</span>
+                    <a href="tel:+919876543210" data-phone-link class="h5 font-mono fw-bold d-block mb-1 text-decoration-none">+91 98765 43210</a>
+                    <span class="small text-secondary-custom d-block">Toll-Free Farmer Desk: <a href="tel:18004257890" class="fw-semibold">1800-425-7890</a></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="col-md-6 col-xl-12">
+                <div class="p-3 rounded bg-surface border d-flex gap-3 align-items-start h-100">
+                  <span class="brand-emblem flex-shrink-0"><i class="bi bi-envelope-paper-fill"></i></span>
+                  <div>
+                    <span class="font-mono small text-muted-custom text-uppercase d-block">Email Enquiries &amp; FPO Tenders</span>
+                    <a href="mailto:dispatch@ironfieldagri.in" data-email-link class="fw-bold font-mono d-block mb-1">dispatch@ironfieldagri.in</a>
+                    <span class="small text-secondary-custom d-block">GST Quotations &amp; Custom Hiring Contracts</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Operating Hours -->
+              <div class="col-md-6 col-xl-12">
+                <div class="p-3 rounded bg-surface border d-flex gap-3 align-items-start h-100">
+                  <span class="brand-emblem flex-shrink-0"><i class="bi bi-clock-history"></i></span>
+                  <div>
+                    <span class="font-mono small text-muted-custom text-uppercase d-block">Yard Operating Hours</span>
+                    <strong class="d-block small">Monday – Saturday: 06:00 AM to 08:00 PM</strong>
+                    <span class="small text-secondary-custom d-block">Kharif &amp; Rabi Peak Windows: Open 7 Days (24x7 Field Mechanic Patrol)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp Direct CTA Card -->
+            <div class="p-4 rounded bg-charcoal text-white border border-secondary mb-4">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <i class="bi bi-whatsapp fs-2 text-success"></i>
+                <div>
+                  <h3 class="h5 font-heading text-uppercase text-white mb-0 d-block">Instant WhatsApp Equipment Desk</h3>
+                  <span class="small text-white-50 font-mono d-block">Average Response: Under 10 Minutes</span>
+                </div>
+              </div>
+              <p class="small text-white-50 mb-3 d-block">
+                Prefer messaging? Send your village pin location and required tractor/implement directly on WhatsApp.
+              </p>
+              <a href="https://wa.me/919876543210" data-whatsapp-link class="btn-agri-primary w-100">
+                <i class="bi bi-whatsapp"></i> Start WhatsApp Rental Chat
+              </a>
+            </div>
+
+            <!-- Social Media Links -->
+            <div>
+              <span class="font-mono small text-uppercase text-muted-custom d-block mb-2">Follow Field Demonstrations &amp; Fleet Updates</span>
+              <div class="d-flex gap-2">
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-agri-outline py-2 px-3 small" aria-label="YouTube Channel">
+                  <i class="bi bi-youtube text-danger"></i> YouTube
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="btn-agri-outline py-2 px-3 small" aria-label="Facebook Page">
+                  <i class="bi bi-facebook text-primary"></i> Facebook
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-agri-outline py-2 px-3 small" aria-label="Instagram Profile">
+                  <i class="bi bi-instagram text-accent"></i> Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Validated Rental Enquiry Form -->
+          <div class="col-xl-7">
+            <div class="p-4 p-md-5 rounded bg-surface border shadow-sm">
+              <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 pb-3 mb-4 border-bottom">
+                <div>
+                  <span class="eyebrow-tag mb-1"><i class="bi bi-calendar2-plus-fill"></i> Equipment Reservation Request</span>
+                  <h2 class="h2 font-heading text-uppercase mb-0">Submit a Machinery Rental Enquiry</h2>
+                </div>
+                <span class="badge bg-dark font-mono py-2 px-3">No Upfront Online Payment</span>
+              </div>
+
+              <form id="rentalEnquiryForm" novalidate>
+                <div class="row g-3">
+                  <!-- 1. Full Name -->
+                  <div class="col-md-6">
+                    <label for="enquiryFullName" class="form-label-agri">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" id="enquiryFullName" name="fullName" class="form-control-agri" placeholder="e.g. Gurpreet Singh Sandhu" required>
+                  </div>
+
+                  <!-- 2. Phone Number -->
+                  <div class="col-md-6">
+                    <label for="enquiryPhone" class="form-label-agri">Mobile / Phone Number <span class="text-danger">*</span></label>
+                    <input type="tel" id="enquiryPhone" name="phone" class="form-control-agri" placeholder="e.g. +91 98765 43210" required>
+                  </div>
+
+                  <!-- 3. Email Address -->
+                  <div class="col-md-6">
+                    <label for="enquiryEmail" class="form-label-agri">Email Address <span class="text-danger">*</span></label>
+                    <input type="email" id="enquiryEmail" name="email" class="form-control-agri" placeholder="e.g. farmer@example.com" required>
+                  </div>
+
+                  <!-- 4. Farm Location -->
+                  <div class="col-md-6">
+                    <label for="enquiryLocation" class="form-label-agri">Farm Location (Village / Tehsil / District) <span class="text-danger">*</span></label>
+                    <input type="text" id="enquiryLocation" name="location" class="form-control-agri" placeholder="e.g. Village Taraori, Karnal, Haryana" required>
+                  </div>
+
+                  <!-- 5. Equipment Required -->
+                  <div class="col-12">
+                    <label for="enquiryEquipment" class="form-label-agri">Equipment Required <span class="text-danger">*</span></label>
+                    <select id="enquiryEquipment" name="equipment" class="form-select-agri" required>
+                      <!-- Populated dynamically by assets/js/main.js from EQUIPMENT_DATA -->
+                      <option value="">-- Select Required Tractor or Equipment --</option>
+                    </select>
+                  </div>
+
+                  <!-- 6. Preferred Rental Start Date -->
+                  <div class="col-md-6">
+                    <label for="enquiryStartDate" class="form-label-agri">Preferred Rental Start Date <span class="text-danger">*</span></label>
+                    <input type="date" id="enquiryStartDate" name="startDate" class="form-control-agri" required>
+                  </div>
+
+                  <!-- 7. Rental Duration -->
+                  <div class="col-md-6">
+                    <label for="enquiryDuration" class="form-label-agri">Rental Duration <span class="text-danger">*</span></label>
+                    <select id="enquiryDuration" name="duration" class="form-select-agri" required>
+                      <option value="Daily Rental (1–6 Days)">Daily Rental (1–6 Days &bull; 8 Engine Hrs/Day)</option>
+                      <option value="Weekly Rental (1–3 Weeks)">Weekly Rental (1–3 Weeks &bull; Save ~12%)</option>
+                      <option value="Monthly / Seasonal Contract">Monthly / Seasonal Contract (Save ~25%)</option>
+                      <option value="Custom Multi-Machine Contract">Custom Multi-Machine / FPO Package</option>
+                    </select>
+                  </div>
+
+                  <!-- Optional Service Configuration Checkboxes -->
+                  <div class="col-12">
+                    <span class="form-label-agri">Optional Dispatch Configuration (Not Included in Base Rate unless Selected)</span>
+                    <div class="row g-2">
+                      <div class="col-sm-6">
+                        <div class="form-check p-2 ps-4 rounded bg-surface-alt border">
+                          <input class="form-check-input" type="checkbox" id="optOperator" name="optOperator">
+                          <label class="form-check-label small" for="optOperator">
+                            Include Certified Operator (+₹950/day)
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-check p-2 ps-4 rounded bg-surface-alt border">
+                          <input class="form-check-input" type="checkbox" id="optDelivery" name="optDelivery">
+                          <label class="form-check-label small" for="optDelivery">
+                            Require Farm-Gate Delivery (₹45/km &gt; 10km)
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 8. Additional Requirements -->
+                  <div class="col-12">
+                    <label for="enquiryNotes" class="form-label-agri">Additional Requirements (Acreage, Soil Type, Implement Pairing)</label>
+                    <textarea id="enquiryNotes" name="notes" rows="3" class="form-control-agri" placeholder="Mention total acres, crop type, whether you need an implement bundled, or preferred delivery time..."></textarea>
+                  </div>
+
+                  <!-- Validation / Confirmation Feedback Container -->
+                  <div class="col-12" id="enquiryFormFeedback" aria-live="polite"></div>
+
+                  <!-- 9. Submit Rental Enquiry Button -->
+                  <div class="col-12 pt-2">
+                    <button type="submit" class="btn-agri-primary w-100 py-3">
+                      <i class="bi bi-send-check-fill"></i> Submit Rental Enquiry
+                    </button>
+                    <p class="small text-muted-custom text-center mt-2 mb-0">
+                      <i class="bi bi-shield-check text-accent me-1"></i>Sample frontend enquiry experience &bull; No automated billing is charged upon submission.
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MAP / YARD LOCATION & DIRECTIONS SECTION -->
+    <section class="section-padding-sm bg-surface-alt border-top">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-xl-5">
+            <span class="eyebrow-tag"><i class="bi bi-map-fill"></i> Yard Location &amp; Service Coverage</span>
+            <h2 class="h2 font-heading text-uppercase mb-2">Highway-Accessible Machinery Depot</h2>
+            <p class="text-secondary-custom small mb-3">
+              Located directly off NH-44 Bypass in Karnal with wide loading ramps for low-bed trailers, tractor-trolleys, and heavy combine harvesters.
+            </p>
+            <ul class="list-unstyled small mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i><strong>Primary Coverage Zones:</strong> Karnal, Kurukshetra, Panipat, Kaithal, Jind, Yamunanagar &amp; Ambala</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i><strong>Weighbridge &amp; Loading Ramp:</strong> On-site 40-ton hydraulic loading bay</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i><strong>GPS Coordinates:</strong> 29.6857° N, 76.9905° E</li>
+            </ul>
+            <a href="https://www.google.com/maps" data-directions-link class="btn-agri-forest">
+              <i class="bi bi-geo-alt-fill"></i> Open in Google Maps &amp; Get Directions
+            </a>
+          </div>
+
+          <div class="col-xl-7">
+            <div class="rounded overflow-hidden border shadow-sm bg-surface p-2">
+              <iframe
+                title="IronField Agri Rentals Regional Yard Map - Karnal Haryana"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=76.9300%2C29.6400%2C77.0500%2C29.7300&amp;layer=mapnik&amp;marker=29.6857%2C76.9905"
+                style="width:100%;height:340px;border:0;border-radius:6px;"
+                loading="lazy">
+              </iframe>
+              <div class="d-flex flex-wrap justify-content-between align-items-center px-2 pt-2 small font-mono text-muted-custom">
+                <span><i class="bi bi-pin-map-fill text-accent me-1"></i>NH-44 Bypass Agro Machinery Park, Karnal 132001</span>
+                <a href="https://www.google.com/maps" data-directions-link class="text-accent fw-bold">Launch Turn-by-Turn Navigation &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MULTI-COLUMN FOOTER (WHITE BG IN LIGHT MODE) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="navbar-brand-agri mb-3" href="index.html">
+            <span class="brand-emblem"><i class="bi bi-gear-wide-connected"></i></span>
+            <span class="brand-text-wrap">
+              <span class="brand-title footer-brand-title">IRONFIELD</span>
+              <span class="brand-subtitle footer-brand-sub">Agri Machinery Rentals</span>
+            </span>
+          </a>
+          <p class="small footer-text mb-3">
+            Institutional-grade tractor, tillage, planting, and harvesting equipment rentals serving progressive farmers, agricultural contractors, and FPOs with transparent INR rates and 50-point inspected machinery.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://wa.me/919876543210" data-whatsapp-link class="footer-social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="tel:+919876543210" data-phone-link class="footer-social-btn" aria-label="Phone"><i class="bi bi-telephone-fill"></i></a>
+            <a href="mailto:dispatch@ironfieldagri.in" data-email-link class="footer-social-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="https://www.google.com/maps" data-directions-link class="footer-social-btn" aria-label="Directions"><i class="bi bi-geo-alt-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small text-accent"></i>Home 1 (Field Power)</a></li>
+            <li><a href="home-2.html"><i class="bi bi-chevron-right small text-accent"></i>Home 2 (Fleet Matrix)</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-accent"></i>About IronField</a></li>
+            <li><a href="equipment.html"><i class="bi bi-chevron-right small text-accent"></i>Equipment Catalogue</a></li>
+            <li><a href="rates.html"><i class="bi bi-chevron-right small text-accent"></i>Rental Rates (INR)</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small text-accent"></i>Contact &amp; Enquiry</a></li>
+            <li><a href="dashboard.html"><i class="bi bi-chevron-right small text-accent"></i>Farmer Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5>Equipment Fleet</h5>
+          <ul class="footer-links">
+            <li><a href="equipment.html?category=tractors"><i class="bi bi-chevron-right small text-accent"></i>4WD Heavy &amp; Utility Tractors</a></li>
+            <li><a href="equipment.html?category=land-prep"><i class="bi bi-chevron-right small text-accent"></i>Rotavators &amp; Reversible Ploughs</a></li>
+            <li><a href="equipment.html?category=planting-harvesting"><i class="bi bi-chevron-right small text-accent"></i>Zero-Till Drills &amp; Planters</a></li>
+            <li><a href="equipment.html?category=planting-harvesting&sub=Harvesters"><i class="bi bi-chevron-right small text-accent"></i>Combine Harvesters &amp; Threshers</a></li>
+            <li><a href="equipment.html?category=other-machinery"><i class="bi bi-chevron-right small text-accent"></i>Laser Levelers, Trailers &amp; Pumps</a></li>
+            <li><a href="login.html"><i class="bi bi-chevron-right small text-accent"></i>Farmer / Client Login</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Central Machinery Yard</h5>
+          <ul class="list-unstyled small footer-text mb-0">
+            <li class="mb-2 d-flex gap-2">
+              <i class="bi bi-geo-alt-fill text-accent mt-1"></i>
+              <span>Plot 44, Agro-Industrial Machinery Park, NH-44 Bypass, Karnal, Haryana 132001</span>
+            </li>
+            <li class="mb-2 d-flex gap-2">
+              <i class="bi bi-telephone-fill text-accent mt-1"></i>
+              <a href="tel:+919876543210" data-phone-link class="footer-contact-link text-decoration-none">+91 98765 43210 (Dispatch Desk)</a>
+            </li>
+            <li class="mb-2 d-flex gap-2">
+              <i class="bi bi-envelope-fill text-accent mt-1"></i>
+              <a href="mailto:dispatch@ironfieldagri.in" data-email-link class="footer-contact-link text-decoration-none">dispatch@ironfieldagri.in</a>
+            </li>
+            <li class="d-flex gap-2">
+              <i class="bi bi-clock-fill text-accent mt-1"></i>
+              <span>Mon–Sat: 06:00 AM – 08:00 PM<br>Harvest Season: 24x7 Field Support</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div>&copy; 2026 IronField Agri Rentals Pvt. Ltd. All Rights Reserved. Sample rates &amp; availability for commercial template demonstration.</div>
+        <div class="d-flex gap-3">
+          <a href="rates.html#rental-conditions">Rental Policy</a>
+          <a href="login.html">Client Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
