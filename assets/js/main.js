@@ -240,13 +240,13 @@
               </div>
             </div>
 
-            <div class="d-grid gap-2 d-sm-flex mt-1">
-              <button type="button" class="btn-agri-outline flex-fill py-2 px-3" style="font-size:0.92rem;" data-view-details="${item.slug}">
-                <i class="bi bi-sliders2"></i> View Details
-              </button>
-              <a href="contact.html?equipment=${encodeURIComponent(item.slug)}#enquiry-form" class="btn-agri-primary flex-fill py-2 px-3" style="font-size:0.92rem;">
+            <div class="equipment-card-actions mt-auto pt-2">
+              <a href="contact.html?equipment=${encodeURIComponent(item.slug)}#enquiry-form" class="btn-agri-primary">
                 <i class="bi bi-calendar2-check"></i> Rent This Equipment
               </a>
+              <button type="button" class="btn-agri-outline" data-view-details="${item.slug}">
+                <i class="bi bi-sliders2"></i> View Details
+              </button>
             </div>
           </div>
         </article>
@@ -497,8 +497,8 @@
       .map(
         ([key, val]) => `
         <tr>
-          <th class="py-2 px-3 bg-surface-alt" style="width:40%;font-size:0.86rem;">${key}</th>
-          <td class="py-2 px-3 font-mono" style="font-size:0.86rem;">${val}</td>
+          <th scope="row" class="spec-table-key">${key}</th>
+          <td class="spec-table-val font-mono">${val}</td>
         </tr>
       `
       )
@@ -519,7 +519,7 @@
               <span class="small text-muted-custom font-mono">Fleet Status:</span>
               <span class="status-pill ${item.statusClass}">${item.availability}</span>
             </div>
-            <div class="p-3 rounded bg-surface-alt border">
+            <div class="p-3 rounded bg-surface-alt border mb-3">
               <div class="small fw-bold text-uppercase mb-2 font-mono">Standard INR Rental Rates</div>
               <div class="d-flex justify-content-between py-1 border-bottom">
                 <span>Daily Rate (8 Engine Hrs)</span>
@@ -544,7 +544,7 @@
             <p class="text-secondary-custom mb-3">${item.description}</p>
             <h5 class="font-heading text-uppercase mb-2">Technical Specifications</h5>
             <div class="table-responsive border rounded mb-3">
-              <table class="table table-sm mb-0">
+              <table class="table-agri-specs">
                 <tbody>
                   ${specsRows}
                 </tbody>
@@ -552,7 +552,7 @@
             </div>
             <div class="p-3 rounded border border-warning-subtle" style="background:var(--clr-accent-subtle);">
               <strong class="d-block small text-uppercase font-mono mb-1"><i class="bi bi-shield-check me-1"></i>Rental Terms &amp; Conditions</strong>
-              <p class="small mb-0">${item.rentalConditions}</p>
+              <p class="small mb-0 text-secondary-custom">${item.rentalConditions}</p>
             </div>
           </div>
         </div>

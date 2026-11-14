@@ -23,8 +23,8 @@
 
   <!-- Mandatory Sticky Navigation Bar -->
   <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg site-navbar" aria-label="Main Navigation">
-      <div class="container">
+    <nav class="navbar navbar-expand-xl site-navbar" aria-label="Main Navigation">
+      <div class="container d-flex align-items-center justify-content-between">
         <a class="navbar-brand-agri" href="index.html">
           <span class="brand-emblem"><i class="bi bi-gear-wide-connected"></i></span>
           <span class="brand-text-wrap">
@@ -33,18 +33,13 @@
           </span>
         </a>
 
-        <div class="d-flex align-items-center gap-2 d-lg-none">
-          <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
-          <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle Light/Dark Theme">
-            <i class="bi bi-moon-stars-fill"></i>
-          </button>
-          <button class="navbar-toggler navbar-toggler-agri" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-list"></i>
-          </button>
-        </div>
+        <!-- Mobile & Tablet Menu Toggle (Only button in header on mobile & tab views) -->
+        <button class="navbar-toggler navbar-toggler-agri ms-auto d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
 
         <div class="collapse navbar-collapse" id="mainNavbarCollapse">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="index.html" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Home
@@ -87,14 +82,39 @@
             </li>
           </ul>
 
-          <div class="d-flex align-items-center gap-2 navbar-actions-wrap">
-            <button type="button" class="rtl-toggle-btn d-none d-lg-inline-flex" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
-            <button type="button" class="theme-toggle-btn d-none d-lg-inline-flex" data-theme-toggle aria-label="Toggle Light/Dark Theme">
+          <!-- Desktop Actions (Matching 40px Height) -->
+          <div class="d-none d-xl-flex align-items-center gap-2 navbar-actions-wrap ms-xl-3">
+            <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
+            <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle Light/Dark Theme">
               <i class="bi bi-moon-stars-fill"></i>
             </button>
-            <a href="signup.html" class="btn-agri-primary btn-nav-cta w-100 w-lg-auto">
+            <a href="signup.html" class="btn-agri-primary btn-nav-cta">
               <i class="bi bi-person-plus-fill"></i> Sign Up
             </a>
+          </div>
+
+          <!-- All Header Buttons Moved Inside Menu Page on Mobile & Tablet Views -->
+          <div class="navbar-actions-mobile-wrap d-xl-none mt-3 pt-3 border-top border-secondary-subtle">
+            <!-- Preferences: RTL & Theme Toggles -->
+            <div class="d-flex align-items-center justify-content-between mb-3 p-2 rounded bg-surface-alt border">
+              <span class="small font-mono text-muted-custom">Preferences:</span>
+              <div class="d-flex align-items-center gap-2">
+                <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-label="Toggle RTL Layout">RTL</button>
+                <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle Light/Dark Theme">
+                  <i class="bi bi-moon-stars-fill"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Action Buttons: Sign Up & Login -->
+            <div class="d-grid gap-2">
+              <a href="signup.html" class="btn-agri-primary w-100 py-2 text-center">
+                <i class="bi bi-person-plus-fill"></i> Sign Up
+              </a>
+              <a href="login.html" class="btn-agri-outline w-100 py-2 text-center">
+                <i class="bi bi-box-arrow-in-right"></i> Farmer Login
+              </a>
+            </div>
           </div>
         </div>
       </div>
