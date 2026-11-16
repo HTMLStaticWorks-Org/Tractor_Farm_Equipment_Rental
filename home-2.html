@@ -122,72 +122,96 @@
   </header>
 
   <main>
-    <!-- 1. ARCHITECTURAL EDITORIAL HERO SECTION -->
+    <!-- 1. ARCHITECTURAL EDITORIAL BENTO HERO SECTION (DISTINCT FROM HOME 1) -->
     <section class="hero-home-2">
       <div class="container">
+        <!-- Top Industrial Command & Depot Telemetry Strip -->
+        <div class="hero2-command-strip" data-gsap-fade>
+          <div class="d-flex align-items-center gap-2">
+            <span class="badge bg-warning text-dark font-mono px-2 py-1 fw-bold">LIVE MATRIX</span>
+            <span class="font-mono small fw-bold text-uppercase">Karnal NH-44 Central Machinery Depot &bull; 2026 Kharif / Rabi Edition</span>
+          </div>
+          <div class="hero2-command-metrics">
+            <span><i class="bi bi-check2-circle me-1"></i><strong>18 Tractors</strong> Bay-Ready</span>
+            <span><i class="bi bi-gear-wide-connected me-1"></i><strong>34 Implements</strong> Calibrated</span>
+            <span><i class="bi bi-fuel-pump-diesel me-1"></i><strong>Dry-Rate</strong> INR Tariff</span>
+          </div>
+        </div>
+
         <div class="row g-4 align-items-stretch">
-          <div class="col-xl-6 d-flex flex-column justify-content-between" data-gsap-fade>
-            <div>
-              <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
-                <span class="eyebrow-tag mb-0"><i class="bi bi-journal-code"></i> Commercial Fleet Architecture</span>
-                <span class="badge bg-dark font-mono py-2 px-3">2026 KHARIF / RABI CATALOGUE</span>
+          <!-- Left Bento Masthead & Horsepower Tier Architecture -->
+          <div class="col-xl-6 d-flex flex-column" data-gsap-fade>
+            <div class="hero2-masthead-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
+                  <span class="eyebrow-tag mb-0"><i class="bi bi-journal-code"></i> Commercial Fleet Architecture</span>
+                  <span class="badge bg-dark font-mono py-2 px-3 text-white">ISO-9001 INSPECTED</span>
+                </div>
+
+                <h1 class="hero2-main-title">
+                  Precision Agricultural <span class="hero2-title-highlight">Machinery On Demand.</span> Zero Capital Lock-In.
+                </h1>
+
+                <p class="hero2-lead-copy">
+                  Engineered for commercial farm operators, land-leveling contractors, and FPOs who measure profitability in fuel-per-acre and engine uptime. Compare exact PTO ratings, working widths, and live INR tariff tiers before you dispatch.
+                </p>
+
+                <!-- 3-Tier Horsepower Matrix (High Contrast in Light & Dark Modes) -->
+                <div class="row g-3 mb-4 justify-content-center">
+                  <div class="col-md-6 col-xl-4">
+                    <div class="hero2-tier-card">
+                      <div>
+                        <span class="hero2-tier-tag">COMPACT TIER</span>
+                        <strong class="hero2-tier-hp">24–35 HP 4WD</strong>
+                      </div>
+                      <span class="hero2-tier-sub">Orchards &amp; Inter-Row Spraying</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <div class="hero2-tier-card tier-featured">
+                      <div>
+                        <span class="hero2-tier-tag">UTILITY TIER</span>
+                        <strong class="hero2-tier-hp">45–55 HP 4WD</strong>
+                      </div>
+                      <span class="hero2-tier-sub">7ft Rotavator &amp; Zero-Till Sowing</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xl-4">
+                    <div class="hero2-tier-card">
+                      <div>
+                        <span class="hero2-tier-tag">HEAVY TIER</span>
+                        <strong class="hero2-tier-hp">60–76 HP CRDe</strong>
+                      </div>
+                      <span class="hero2-tier-sub">2-MB Plough, Laser &amp; Combine</span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <h1 class="font-heading text-uppercase fw-bolder mb-3" style="font-size:clamp(2.4rem, 4.6vw, 3.9rem);line-height:1.04;">
-                Precision Agricultural <span class="text-accent">Machinery On Demand.</span> Zero Capital Lock-In.
-              </h1>
-
-              <p class="text-secondary-custom fs-5 mb-4">
-                Engineered for commercial farm operators, land-leveling contractors, and FPOs who measure profitability in fuel-per-acre and engine uptime. Compare exact PTO ratings, working widths, and live INR tariff tiers before you dispatch.
-              </p>
-
-              <div class="row g-2 mb-4 justify-content-center">
-                <div class="col-md-6 col-xl-4">
-                  <div class="p-3 rounded bg-surface border h-100">
-                    <span class="font-mono small text-muted-custom d-block">COMPACT TIER</span>
-                    <strong class="font-heading fs-4 d-block">24–35 HP 4WD</strong>
-                    <span class="small text-secondary-custom d-block">Orchards &amp; Inter-Row Spraying</span>
-                  </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                  <div class="p-3 rounded bg-surface border h-100" style="border-inline-start:3px solid var(--clr-accent) !important;">
-                    <span class="font-mono small text-muted-custom d-block">UTILITY TIER</span>
-                    <strong class="font-heading fs-4 d-block">45–55 HP 4WD</strong>
-                    <span class="small text-secondary-custom d-block">7ft Rotavator &amp; Zero-Till Sowing</span>
-                  </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                  <div class="p-3 rounded bg-surface border h-100">
-                    <span class="font-mono small text-muted-custom d-block">HEAVY TIER</span>
-                    <strong class="font-heading fs-4 d-block">60–76 HP CRDe</strong>
-                    <span class="small text-secondary-custom d-block">2-MB Plough, Laser &amp; Combine</span>
-                  </div>
-                </div>
+              <div class="d-flex flex-wrap align-items-center gap-3 pt-3 border-top">
+                <a href="#operational-benchmark" class="btn-agri-forest btn-responsive-balance">
+                  <i class="bi bi-speedometer2"></i> Inspect Output Benchmark
+                </a>
+                <a href="#live-pricing-preview" class="btn-agri-outline btn-responsive-balance">
+                  <i class="bi bi-table"></i> Live Pricing Comparator
+                </a>
               </div>
-            </div>
-
-            <div class="d-flex flex-wrap align-items-center gap-3 pt-2">
-              <a href="#live-pricing-preview" class="btn-agri-forest">
-                <i class="bi bi-table"></i> Inspect Live Pricing Matrix
-              </a>
-              <a href="equipment.html" class="btn-agri-outline">
-                <i class="bi bi-sliders"></i> Full Technical Catalogue
-              </a>
             </div>
           </div>
 
+          <!-- Right Flagship Technical Console -->
           <div class="col-xl-6" data-gsap-fade>
             <div class="editorial-grid-frame h-100 d-flex flex-column justify-content-between">
               <div class="position-relative" style="min-height:320px;flex-grow:1;">
                 <img src="assets/images/tractor-mahindra-655.jpg" alt="Mahindra Novo 655 DI PP 4WD Tractor in commercial farmland" class="w-100 h-100" style="object-fit:cover;min-height:320px;">
                 <div class="position-absolute top-0 start-0 m-3">
-                  <span class="badge bg-warning text-dark font-mono px-3 py-2">FLAGSHIP 68 HP CRDe 4WD</span>
+                  <span class="badge bg-warning text-dark font-mono px-3 py-2 fw-bold">FLAGSHIP 68 HP CRDe 4WD</span>
                 </div>
-                <div class="position-absolute bottom-0 start-0 end-0 p-3" style="background:linear-gradient(to top, rgba(14,22,18,0.94), transparent);">
+                <div class="position-absolute bottom-0 start-0 end-0 p-3" style="background:linear-gradient(to top, rgba(10,18,14,0.96) 15%, rgba(10,18,14,0.65) 75%, transparent 100%);">
                   <div class="d-flex flex-wrap justify-content-between align-items-end text-white gap-2">
                     <div>
-                      <span class="font-mono small text-accent">MODEL: MAHINDRA NOVO 655 DI PP V1</span>
-                      <h2 class="h4 font-heading text-uppercase mb-0 text-white">267 Nm Torque &bull; 2700 kg ADDC Hydraulics</h2>
+                      <span class="font-mono small d-block" style="color:#ffd073;font-weight:700;">MODEL: MAHINDRA NOVO 655 DI PP V1</span>
+                      <h2 class="h4 font-heading text-uppercase mb-0" style="color:#ffffff !important;">267 Nm Torque &bull; 2700 kg ADDC Hydraulics</h2>
                     </div>
                     <button type="button" class="btn-agri-primary py-1 px-3" style="font-size:0.86rem;" data-view-details="mahindra-novo-655-di-pp-4wd">
                       Datasheet <i class="bi bi-arrow-up-right"></i>
@@ -197,24 +221,24 @@
               </div>
 
               <div class="editorial-spec-strip justify-content-between">
-                <span><i class="bi bi-speedometer2 text-accent me-1"></i>PTO: 60.5 HP (540/540E/Rev)</span>
-                <span><i class="bi bi-gear-wide text-accent me-1"></i>15F + 15R Shuttle</span>
-                <span><i class="bi bi-tag-fill text-accent me-1"></i>₹3,400/Day (Dry Rate)</span>
+                <span><i class="bi bi-speedometer2 me-1"></i>PTO: 60.5 HP (540/540E/Rev)</span>
+                <span><i class="bi bi-gear-wide me-1"></i>15F + 15R Shuttle</span>
+                <span><i class="bi bi-tag-fill me-1"></i>₹3,400/Day (Dry Rate)</span>
               </div>
 
-              <div class="p-3 bg-surface border-top">
+              <div class="hero2-harvest-bar">
                 <div class="row g-3 align-items-center">
                   <div class="col-sm-7">
                     <div class="d-flex align-items-center gap-3">
-                      <img src="assets/images/equip-combine-harvester.jpg" alt="Claas Combine Harvester" class="rounded" style="width:78px;height:56px;object-fit:cover;flex-shrink:0;">
+                      <img src="assets/images/equip-combine-harvester.jpg" alt="Claas Combine Harvester" class="rounded border" style="width:78px;height:56px;object-fit:cover;flex-shrink:0;">
                       <div>
-                        <span class="font-mono small text-muted-custom d-block">HARVEST DIVISION</span>
-                        <strong class="font-heading fs-5">Claas Crop Tiger 40 Terra Trac</strong>
+                        <span class="hero2-harvest-label">HARVEST DIVISION</span>
+                        <strong class="hero2-harvest-title">Claas Crop Tiger 40 Terra Trac</strong>
                       </div>
                     </div>
                   </div>
                   <div class="col-sm-5 text-sm-end">
-                    <a href="contact.html?equipment=claas-crop-tiger-40-terra-trac-harvester#enquiry-form" class="btn-agri-outline py-1 px-3 w-100 w-sm-auto" style="font-size:0.86rem;">
+                    <a href="contact.html?equipment=claas-crop-tiger-40-terra-trac-harvester#enquiry-form" class="btn-agri-forest py-2 px-3 w-100 w-sm-auto" style="font-size:0.86rem;">
                       Reserve Combine &rarr;
                     </a>
                   </div>
@@ -226,7 +250,92 @@
       </div>
     </section>
 
-    <!-- 2. VISUALLY PROMINENT RENTAL PRICING PREVIEW WITH INTERACTIVE DURATION SWITCHER -->
+    <!-- 2. CONTRACTOR FLEET CAPACITY MATRIX & LIVE ACREAGE BENCHMARK TERMINAL -->
+    <section class="section-padding bg-surface-alt border-top border-bottom" id="operational-benchmark">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 gap-3">
+          <div>
+            <span class="eyebrow-tag mb-2"><i class="bi bi-cpu-fill"></i> Commercial Contractor Architecture</span>
+            <h2 class="section-title mb-2">Operational Output &amp; Diesel Consumption Benchmark</h2>
+            <p class="section-subtitle mb-0">
+              Field-tested metrics across standard North-Indian Indo-Gangetic alluvial loam soil conditions at 65% rated engine load.
+            </p>
+          </div>
+          <div>
+            <a href="contact.html?equipment=custom-multi-machine#enquiry-form" class="btn-agri-primary py-2 px-4 btn-responsive-balance">
+              <i class="bi bi-file-earmark-spreadsheet-fill"></i> Request Multi-Unit Tender
+            </a>
+          </div>
+        </div>
+
+        <div class="benchmark-table-wrapper">
+          <div class="table-responsive">
+            <table class="table-benchmark mb-0">
+              <thead>
+                <tr>
+                  <th>Field Operation Class</th>
+                  <th>Matched Tractor Unit</th>
+                  <th>Target Implement</th>
+                  <th>Working Speed</th>
+                  <th>Hourly Coverage</th>
+                  <th>Diesel Burn Rate</th>
+                  <th>Daily Output (8h Shift)</th>
+                </tr>
+              </thead>
+              <tbody class="font-mono">
+                <tr>
+                  <td><strong class="benchmark-op-title">Primary Deep Tillage</strong></td>
+                  <td><span class="benchmark-tractor">Mahindra Novo 655 CRDe (68 HP 4WD)</span></td>
+                  <td>Lemken 2-MB Reversible Plough</td>
+                  <td>4.8 – 5.5 km/h</td>
+                  <td>1.0 – 1.3 Acres/hr</td>
+                  <td><span class="benchmark-diesel-badge">5.2 – 5.8 L/hr</span></td>
+                  <td><span class="benchmark-output-badge">8.0 – 10.4 Acres</span></td>
+                </tr>
+                <tr>
+                  <td><strong class="benchmark-op-title">Precision Laser Leveling</strong></td>
+                  <td><span class="benchmark-tractor">John Deere 5310 GearPro (57 HP 4WD)</span></td>
+                  <td>Apogee Dual-Slope Laser Unit</td>
+                  <td>6.0 – 7.2 km/h</td>
+                  <td>0.8 – 1.0 Acres/hr</td>
+                  <td><span class="benchmark-diesel-badge">4.6 – 5.1 L/hr</span></td>
+                  <td><span class="benchmark-output-badge">6.4 – 8.0 Acres</span></td>
+                </tr>
+                <tr>
+                  <td><strong class="benchmark-op-title">Secondary Pulverization</strong></td>
+                  <td><span class="benchmark-tractor">Swaraj 855 FE 5-Star (52 HP 4WD)</span></td>
+                  <td>Shaktiman 7ft Boron Rotavator</td>
+                  <td>3.5 – 4.2 km/h</td>
+                  <td>1.5 – 1.8 Acres/hr</td>
+                  <td><span class="benchmark-diesel-badge">4.8 – 5.4 L/hr</span></td>
+                  <td><span class="benchmark-output-badge">12.0 – 14.4 Acres</span></td>
+                </tr>
+                <tr>
+                  <td><strong class="benchmark-op-title">Singulated Sowing</strong></td>
+                  <td><span class="benchmark-tractor">New Holland 3630 TX (50 HP 2WD/4WD)</span></td>
+                  <td>Maschio SP 4-Row Pneumatic Planter</td>
+                  <td>5.5 – 6.5 km/h</td>
+                  <td>2.2 – 2.6 Acres/hr</td>
+                  <td><span class="benchmark-diesel-badge">3.9 – 4.4 L/hr</span></td>
+                  <td><span class="benchmark-output-badge">17.6 – 20.8 Acres</span></td>
+                </tr>
+                <tr>
+                  <td><strong class="benchmark-op-title">Wet / Lodged Paddy Harvest</strong></td>
+                  <td><span class="benchmark-tractor">Claas Crop Tiger 40 Terra Trac</span></td>
+                  <td>Tangential Axial Rotor Header</td>
+                  <td>2.8 – 3.8 km/h</td>
+                  <td>1.2 – 1.5 Acres/hr</td>
+                  <td><span class="benchmark-diesel-badge">7.2 – 8.1 L/hr</span></td>
+                  <td><span class="benchmark-output-badge">9.6 – 12.0 Acres</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. VISUALLY PROMINENT RENTAL PRICING PREVIEW WITH INTERACTIVE DURATION SWITCHER -->
     <section class="section-padding" id="live-pricing-preview">
       <div class="container">
         <div class="row g-4 align-items-end mb-5">
@@ -238,7 +347,7 @@
             </p>
           </div>
           <div class="col-lg-5 text-lg-end">
-            <div class="d-inline-flex p-1 rounded bg-surface-alt border" role="group" aria-label="Rental Duration Switcher">
+            <div class="d-inline-flex flex-wrap p-1 rounded bg-surface-alt border gap-1" role="group" aria-label="Rental Duration Switcher">
               <button type="button" class="filter-pill-btn active py-2 px-3" data-rate-duration-switch="daily">Daily Rate</button>
               <button type="button" class="filter-pill-btn py-2 px-3" data-rate-duration-switch="weekly">Weekly (Save 12%)</button>
               <button type="button" class="filter-pill-btn py-2 px-3" data-rate-duration-switch="monthly">Monthly (Save 25%)</button>
@@ -247,122 +356,118 @@
         </div>
 
         <div class="row g-4 justify-content-center">
+          <!-- Card 1: Tillage -->
           <div class="col-md-6 col-xl-3">
-            <div class="home2-estimator-card h-100 d-flex flex-column justify-content-between">
-              <div>
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="font-mono small text-muted-custom">CLASS 01 &bull; TILLAGE</span>
-                  <span class="status-pill status-available">14 Ready</span>
-                </div>
-                <h3 class="h3 font-heading text-uppercase mb-1 d-block">Rotavators &amp; Ploughs</h3>
-                <p class="small text-secondary-custom mb-3 d-block">Shaktiman 7ft Rotavator, FieldKing 11-Tyne Cultivator &amp; Lemken 2-MB Plough</p>
-
-                <div class="p-3 rounded bg-surface-alt border mb-3">
-                  <span class="small text-muted-custom d-block font-mono">Starting Tariff (Shaktiman 7ft):</span>
-                  <div class="d-flex align-items-baseline gap-1 mt-1">
-                    <span class="h2 font-mono fw-bold text-accent mb-0" data-dynamic-rate data-rate-daily="950" data-rate-weekly="5800" data-rate-monthly="19500">₹950</span>
-                    <span class="small font-mono text-muted-custom" data-rate-suffix>/ Day</span>
-                  </div>
-                </div>
-
-                <ul class="list-unstyled small mb-4">
-                  <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Boron steel blades &amp; PTO shaft included</li>
-                  <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Category-II 3-point hitch pin set</li>
-                  <li class="mb-2"><i class="bi bi-info-circle text-muted-custom me-2"></i>Refundable Deposit: ₹3,500 – ₹6,000</li>
-                </ul>
+            <div class="home2-estimator-card">
+              <div class="home2-card-header-row">
+                <span class="font-mono small text-muted-custom">CLASS 01 &bull; TILLAGE</span>
+                <span class="status-pill status-available">14 Ready</span>
               </div>
-              <a href="equipment.html?category=land-prep" class="btn-agri-outline w-100">Select Tillage Unit</a>
+              <h3 class="home2-card-title">Rotavators &amp; Ploughs</h3>
+              <p class="home2-card-desc">Shaktiman 7ft Rotavator, FieldKing 11-Tyne Cultivator &amp; Lemken 2-MB Plough</p>
+
+              <div class="home2-price-preview-box">
+                <span class="home2-price-label">Starting Tariff (Shaktiman 7ft):</span>
+                <div class="home2-price-value-row">
+                  <span class="home2-price-amount" data-dynamic-rate data-rate-daily="950" data-rate-weekly="5800" data-rate-monthly="19500">₹950</span>
+                  <span class="small font-mono text-muted-custom" data-rate-suffix>/ Day</span>
+                </div>
+              </div>
+
+              <ul class="home2-card-specs">
+                <li><i class="bi bi-check2-circle text-success"></i><span>Boron steel blades &amp; PTO shaft included</span></li>
+                <li><i class="bi bi-check2-circle text-success"></i><span>Category-II 3-point hitch pin set</span></li>
+                <li><i class="bi bi-shield-check text-muted-custom"></i><span>Refundable Deposit: ₹3,500 – ₹6,000</span></li>
+              </ul>
+              <a href="equipment.html?category=land-prep" class="btn-agri-outline btn-card-cta">Select Tillage Unit</a>
             </div>
           </div>
 
+          <!-- Card 2: Utility -->
           <div class="col-md-6 col-xl-3">
-            <div class="home2-estimator-card h-100 d-flex flex-column justify-content-between" style="border-top-color:var(--clr-accent);">
-              <div>
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="font-mono small text-muted-custom">CLASS 02 &bull; 50–52 HP</span>
-                  <span class="status-pill status-available">8 Ready</span>
-                </div>
-                <h3 class="h3 font-heading text-uppercase mb-1 d-block">Utility 4WD Tractors</h3>
-                <p class="small text-secondary-custom mb-3 d-block">Swaraj 855 FE 4WD &amp; New Holland 3630 TX Special Edition</p>
-
-                <div class="p-3 rounded bg-surface-alt border mb-3">
-                  <span class="small text-muted-custom d-block font-mono">Standard Tariff (Swaraj 855):</span>
-                  <div class="d-flex align-items-baseline gap-1 mt-1">
-                    <span class="h2 font-mono fw-bold text-accent mb-0" data-dynamic-rate data-rate-daily="2300" data-rate-weekly="14500" data-rate-monthly="51000">₹2,300</span>
-                    <span class="small font-mono text-muted-custom" data-rate-suffix>/ Day</span>
-                  </div>
-                </div>
-
-                <ul class="list-unstyled small mb-4">
-                  <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Includes 8 engine hours per day</li>
-                  <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Dry fuel rate (Full-to-Full settlement)</li>
-                  <li class="mb-2"><i class="bi bi-info-circle text-muted-custom me-2"></i>Operator optional at ₹950/day</li>
-                </ul>
+            <div class="home2-estimator-card" style="border-top-color:var(--clr-accent);">
+              <div class="home2-card-header-row">
+                <span class="font-mono small text-muted-custom">CLASS 02 &bull; 50–52 HP</span>
+                <span class="status-pill status-available">8 Ready</span>
               </div>
-              <a href="contact.html?equipment=swaraj-855-fe-4wd-utility#enquiry-form" class="btn-agri-primary w-100">Rent Utility Tractor</a>
+              <h3 class="home2-card-title">Utility 4WD Tractors</h3>
+              <p class="home2-card-desc">Swaraj 855 FE 4WD &amp; New Holland 3630 TX Special Edition</p>
+
+              <div class="home2-price-preview-box">
+                <span class="home2-price-label">Standard Tariff (Swaraj 855):</span>
+                <div class="home2-price-value-row">
+                  <span class="home2-price-amount" data-dynamic-rate data-rate-daily="2300" data-rate-weekly="14500" data-rate-monthly="51000">₹2,300</span>
+                  <span class="small font-mono text-muted-custom" data-rate-suffix>/ Day</span>
+                </div>
+              </div>
+
+              <ul class="home2-card-specs">
+                <li><i class="bi bi-check2-circle text-success"></i><span>Includes 8 digital engine hours per day</span></li>
+                <li><i class="bi bi-check2-circle text-success"></i><span>Dry fuel rate (Full-to-Full settlement)</span></li>
+                <li><i class="bi bi-person-check text-muted-custom"></i><span>Certified operator optional at ₹950/day</span></li>
+              </ul>
+              <a href="contact.html?equipment=swaraj-855-fe-4wd-utility#enquiry-form" class="btn-agri-primary btn-card-cta">Rent Utility Tractor</a>
             </div>
           </div>
 
+          <!-- Card 3: Heavy 4WD -->
           <div class="col-md-6 col-xl-3">
-            <div class="home2-estimator-card h-100 d-flex flex-column justify-content-between">
-              <div>
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="font-mono small text-muted-custom">CLASS 03 &bull; 57–68 HP</span>
-                  <span class="status-pill status-available">6 Ready</span>
-                </div>
-                <h3 class="h3 font-heading text-uppercase mb-1 d-block">Heavy-Duty 4WD Fleet</h3>
-                <p class="small text-secondary-custom mb-3 d-block">John Deere 5310 GearPro 4WD &amp; Mahindra Novo 655 CRDe 4WD</p>
-
-                <div class="p-3 rounded bg-surface-alt border mb-3">
-                  <span class="small text-muted-custom d-block font-mono">Standard Tariff (JD 5310 4WD):</span>
-                  <div class="d-flex align-items-baseline gap-1 mt-1">
-                    <span class="h2 font-mono fw-bold text-accent mb-0" data-dynamic-rate data-rate-daily="2800" data-rate-weekly="17500" data-rate-monthly="62000">₹2,800</span>
-                    <span class="small font-mono text-muted-custom" data-rate-suffix>/ Day</span>
-                  </div>
-                </div>
-
-                <ul class="list-unstyled small mb-4">
-                  <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>2500–2700 kg ADDC hydraulic lift</li>
-                  <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Dual-acting valve for MB plough &amp; laser</li>
-                  <li class="mb-2"><i class="bi bi-info-circle text-muted-custom me-2"></i>Refundable Deposit: ₹15,000</li>
-                </ul>
+            <div class="home2-estimator-card">
+              <div class="home2-card-header-row">
+                <span class="font-mono small text-muted-custom">CLASS 03 &bull; 57–68 HP</span>
+                <span class="status-pill status-available">6 Ready</span>
               </div>
-              <a href="contact.html?equipment=john-deere-5310-gearpro-4wd#enquiry-form" class="btn-agri-forest w-100">Rent Heavy 4WD</a>
+              <h3 class="home2-card-title">Heavy-Duty 4WD Fleet</h3>
+              <p class="home2-card-desc">John Deere 5310 GearPro 4WD &amp; Mahindra Novo 655 CRDe 4WD</p>
+
+              <div class="home2-price-preview-box">
+                <span class="home2-price-label">Standard Tariff (JD 5310 4WD):</span>
+                <div class="home2-price-value-row">
+                  <span class="home2-price-amount" data-dynamic-rate data-rate-daily="2800" data-rate-weekly="17500" data-rate-monthly="62000">₹2,800</span>
+                  <span class="small font-mono text-muted-custom" data-rate-suffix>/ Day</span>
+                </div>
+              </div>
+
+              <ul class="home2-card-specs">
+                <li><i class="bi bi-check2-circle text-success"></i><span>2500–2700 kg ADDC hydraulic lift</span></li>
+                <li><i class="bi bi-check2-circle text-success"></i><span>Dual-acting valve for MB plough &amp; laser</span></li>
+                <li><i class="bi bi-shield-check text-muted-custom"></i><span>Refundable Security Deposit: ₹15,000</span></li>
+              </ul>
+              <a href="contact.html?equipment=john-deere-5310-gearpro-4wd#enquiry-form" class="btn-agri-forest btn-card-cta">Rent Heavy 4WD</a>
             </div>
           </div>
 
+          <!-- Card 4: Combine -->
           <div class="col-md-6 col-xl-3">
-            <div class="home2-estimator-card h-100 d-flex flex-column justify-content-between">
-              <div>
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="font-mono small text-muted-custom">CLASS 04 &bull; HARVEST</span>
-                  <span class="status-pill status-limited">Book 48h Ahead</span>
-                </div>
-                <h3 class="h3 font-heading text-uppercase mb-1 d-block">Combine Harvesters</h3>
-                <p class="small text-secondary-custom mb-3 d-block">Claas Crop Tiger 40 Terra Trac &amp; Dashmesh 9100 Multi-Crop Thresher</p>
-
-                <div class="p-3 rounded bg-surface-alt border mb-3">
-                  <span class="small text-muted-custom d-block font-mono">Standard Tariff (Claas Combine):</span>
-                  <div class="d-flex align-items-baseline gap-1 mt-1">
-                    <span class="h2 font-mono fw-bold text-accent mb-0" data-dynamic-rate data-rate-daily="8500" data-rate-weekly="54000" data-rate-monthly="195000">₹8,500</span>
-                    <span class="small font-mono text-muted-custom" data-rate-suffix>/ Day</span>
-                  </div>
-                </div>
-
-                <ul class="list-unstyled small mb-4">
-                  <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Rubber track zero-compaction drive</li>
-                  <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Paddy, wheat, soybean &amp; pulses headers</li>
-                  <li class="mb-2"><i class="bi bi-info-circle text-muted-custom me-2"></i>Certified Combine Operator: ₹1,400/day</li>
-                </ul>
+            <div class="home2-estimator-card">
+              <div class="home2-card-header-row">
+                <span class="font-mono small text-muted-custom">CLASS 04 &bull; HARVEST</span>
+                <span class="status-pill status-limited">Book 48h Ahead</span>
               </div>
-              <a href="rates.html" class="btn-agri-outline w-100">Full Rate Sheet &rarr;</a>
+              <h3 class="home2-card-title">Combine Harvesters</h3>
+              <p class="home2-card-desc">Claas Crop Tiger 40 Terra Trac &amp; Dashmesh 9100 Multi-Crop Thresher</p>
+
+              <div class="home2-price-preview-box">
+                <span class="home2-price-label">Standard Tariff (Claas Combine):</span>
+                <div class="home2-price-value-row">
+                  <span class="home2-price-amount" data-dynamic-rate data-rate-daily="8500" data-rate-weekly="54000" data-rate-monthly="195000">₹8,500</span>
+                  <span class="small font-mono text-muted-custom" data-rate-suffix>/ Day</span>
+                </div>
+              </div>
+
+              <ul class="home2-card-specs">
+                <li><i class="bi bi-check2-circle text-success"></i><span>Rubber track zero-compaction drive</span></li>
+                <li><i class="bi bi-check2-circle text-success"></i><span>Paddy, wheat, soybean &amp; pulses headers</span></li>
+                <li><i class="bi bi-person-check text-muted-custom"></i><span>Certified Combine Operator: ₹1,400/day</span></li>
+              </ul>
+              <a href="rates.html" class="btn-agri-outline btn-card-cta">Full Rate Sheet &rarr;</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3. DISTINCT EQUIPMENT CATEGORY SHOWCASE (TABBED OPERATION ARCHITECTURE) -->
+    <!-- 4. DISTINCT EQUIPMENT CATEGORY SHOWCASE (TABBED OPERATION ARCHITECTURE) -->
     <section class="section-padding bg-surface-alt border-top border-bottom">
       <div class="container">
         <div class="row g-4 align-items-end mb-4">
@@ -409,7 +514,7 @@
                   <img src="assets/images/equip-mb-plough.jpg" alt="Hydraulic Reversible Plough Tillage Equipment" class="rounded w-100" style="height:290px;object-fit:cover;">
                 </div>
                 <div class="col-xl-7">
-                  <span class="font-mono small text-accent text-uppercase d-block">STAGE 01 &bull; SOIL INVERSION &amp; SEEDBED PULVERIZATION</span>
+                  <span class="telematics-metric-footer d-block mb-1">STAGE 01 &bull; SOIL INVERSION &amp; SEEDBED PULVERIZATION</span>
                   <h3 class="h2 font-heading text-uppercase mt-1 mb-2 d-block">Deep Ploughing, Sub-Surface Breaking &amp; Single-Pass Rotavation</h3>
                   <p class="text-secondary-custom mb-3 d-block">
                     Eliminate subsoil hardpans and incorporate heavy crop residue with our German-engineered Lemken hydraulic reversible MB ploughs, Maschio 16-disc offset harrows, and Shaktiman 7ft boron-blade rotavators.
@@ -450,7 +555,7 @@
                   <img src="assets/images/equip-laser-leveler.jpg" alt="Laser Guided Land Leveler attached to Tractor" class="rounded w-100" style="height:290px;object-fit:cover;">
                 </div>
                 <div class="col-xl-7">
-                  <span class="font-mono small text-accent text-uppercase d-block">STAGE 02 &bull; LASER GRADING &amp; SINGULATED PLANTING</span>
+                  <span class="telematics-metric-footer d-block mb-1">STAGE 02 &bull; LASER GRADING &amp; SINGULATED PLANTING</span>
                   <h3 class="h2 font-heading text-uppercase mt-1 mb-2 d-block">Sub-Centimeter Laser Grading &amp; 99.2% Vacuum Seed Singulation</h3>
                   <p class="text-secondary-custom mb-3 d-block">
                     Save 30% irrigation water with Apogee dual-slope laser land levelers, then sow maize, cotton, soybean, or wheat with Maschio SP Dorada pneumatic planters and National 11-row zero-till seed drills.
@@ -491,7 +596,7 @@
                   <img src="assets/images/equip-orchard-sprayer.jpg" alt="Tractor Mounted Agricultural Sprayer" class="rounded w-100" style="height:290px;object-fit:cover;">
                 </div>
                 <div class="col-xl-7">
-                  <span class="font-mono small text-accent text-uppercase d-block">STAGE 03 &bull; CROP PROTECTION &amp; HIGH-HEAD IRRIGATION</span>
+                  <span class="telematics-metric-footer d-block mb-1">STAGE 03 &bull; CROP PROTECTION &amp; HIGH-HEAD IRRIGATION</span>
                   <h3 class="h2 font-heading text-uppercase mt-1 mb-2 d-block">Narrow-Track Orchard Tractors, Air-Blast Sprayers &amp; Mobile Diesel Pumps</h3>
                   <p class="text-secondary-custom mb-3 d-block">
                     Navigate 4-foot orchard alleys with our Kubota B2741S 4WD compact tractor paired with a Mitra Airotec 600L turbo sprayer, or deploy Kirloskar 10 HP trolley diesel pump sets delivering 1,850 LPM.
@@ -532,7 +637,7 @@
                   <img src="assets/images/banner-rates-field.jpg" alt="Combine Harvester Unloading Grain into Tractor Trailer" class="rounded w-100" style="height:290px;object-fit:cover;">
                 </div>
                 <div class="col-xl-7">
-                  <span class="font-mono small text-accent text-uppercase d-block">STAGE 04 &bull; COMBINE HARVESTING, THRESHING &amp; MANDI TRANSPORT</span>
+                  <span class="telematics-metric-footer d-block mb-1">STAGE 04 &bull; COMBINE HARVESTING, THRESHING &amp; MANDI TRANSPORT</span>
                   <h3 class="h2 font-heading text-uppercase mt-1 mb-2 d-block">Wet &amp; Dry Field Combine Harvesting with 10-Ton Hydraulic Tipping Trailers</h3>
                   <p class="text-secondary-custom mb-3 d-block">
                     Harvest lodged or wet paddy and dry wheat with minimal grain cracking using Claas Tangential Axial Rotor technology, Dashmesh 9100 multi-crop threshers, and heavy tandem-axle tipping trailers.
@@ -569,160 +674,118 @@
       </div>
     </section>
 
-    <!-- 4. CONTRACTOR FLEET CAPACITY MATRIX & LIVE ACREAGE TERMINAL -->
-    <section class="section-padding bg-charcoal text-white border-top border-bottom">
-      <div class="container">
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 gap-3">
-          <div>
-            <span class="eyebrow-tag eyebrow-dark mb-2"><i class="bi bi-cpu-fill"></i> Commercial Contractor Architecture</span>
-            <h2 class="h2 font-heading text-uppercase text-white mb-2">Operational Output &amp; Diesel Consumption Benchmark</h2>
-            <p class="text-white-50 small mb-0">
-              Field-tested metrics across standard North-Indian Indo-Gangetic alluvial loam soil conditions at 65% rated engine load.
-            </p>
-          </div>
-          <div>
-            <a href="contact.html?equipment=custom-multi-machine#enquiry-form" class="btn-agri-primary py-2 px-4">
-              <i class="bi bi-file-earmark-spreadsheet-fill"></i> Request Multi-Unit Tender
-            </a>
-          </div>
-        </div>
-
-        <div class="pricing-table-wrapper border-secondary">
-          <div class="table-responsive">
-            <table class="table-agri mb-0">
-              <thead>
-                <tr>
-                  <th>Field Operation Class</th>
-                  <th>Matched Tractor Unit</th>
-                  <th>Target Implement</th>
-                  <th>Working Speed</th>
-                  <th>Hourly Coverage</th>
-                  <th>Diesel Burn Rate</th>
-                  <th>Daily Output (8h Shift)</th>
-                </tr>
-              </thead>
-              <tbody class="small font-mono">
-                <tr>
-                  <td><strong class="text-white">Primary Deep Tillage</strong></td>
-                  <td>Mahindra Novo 655 CRDe (68 HP 4WD)</td>
-                  <td>Lemken 2-MB Reversible Plough</td>
-                  <td>4.8 – 5.5 km/h</td>
-                  <td>1.0 – 1.3 Acres/hr</td>
-                  <td>5.2 – 5.8 L/hr</td>
-                  <td><span class="badge bg-warning text-dark font-mono">8.0 – 10.4 Acres</span></td>
-                </tr>
-                <tr>
-                  <td><strong class="text-white">Precision Laser Leveling</strong></td>
-                  <td>John Deere 5310 GearPro (57 HP 4WD)</td>
-                  <td>Apogee Dual-Slope Laser Unit</td>
-                  <td>6.0 – 7.2 km/h</td>
-                  <td>0.8 – 1.0 Acres/hr</td>
-                  <td>4.6 – 5.1 L/hr</td>
-                  <td><span class="badge bg-warning text-dark font-mono">6.4 – 8.0 Acres</span></td>
-                </tr>
-                <tr>
-                  <td><strong class="text-white">Secondary Pulverization</strong></td>
-                  <td>Swaraj 855 FE 5-Star (52 HP 4WD)</td>
-                  <td>Shaktiman 7ft Boron Rotavator</td>
-                  <td>3.5 – 4.2 km/h</td>
-                  <td>1.5 – 1.8 Acres/hr</td>
-                  <td>4.8 – 5.4 L/hr</td>
-                  <td><span class="badge bg-warning text-dark font-mono">12.0 – 14.4 Acres</span></td>
-                </tr>
-                <tr>
-                  <td><strong class="text-white">Singulated Sowing</strong></td>
-                  <td>New Holland 3630 TX (50 HP 2WD/4WD)</td>
-                  <td>Maschio SP 4-Row Pneumatic Planter</td>
-                  <td>5.5 – 6.5 km/h</td>
-                  <td>2.2 – 2.6 Acres/hr</td>
-                  <td>3.9 – 4.4 L/hr</td>
-                  <td><span class="badge bg-warning text-dark font-mono">17.6 – 20.8 Acres</span></td>
-                </tr>
-                <tr>
-                  <td><strong class="text-white">Wet / Lodged Paddy Harvest</strong></td>
-                  <td>Claas Crop Tiger 40 Terra Trac</td>
-                  <td>Tangential Axial Rotor Header</td>
-                  <td>2.8 – 3.8 km/h</td>
-                  <td>1.2 – 1.5 Acres/hr</td>
-                  <td>7.2 – 8.1 L/hr</td>
-                  <td><span class="badge bg-warning text-dark font-mono">9.6 – 12.0 Acres</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. ALTERNATIVE AGRICULTURAL STORYTELLING -->
+    <!-- 5. CONTRACTOR FLEET TELEMATICS & MOBILE WORKSHOP LOGISTICS HUB -->
     <section class="section-padding">
       <div class="container">
-        <div class="row g-5 align-items-center">
-          <div class="col-xl-6">
-            <div class="row g-3">
-              <div class="col-6">
-                <img src="assets/images/tractor-newholland-3630.jpg" alt="New Holland 3630 Tractor Working in Field" class="rounded w-100 border" style="height:250px;object-fit:cover;">
-              </div>
-              <div class="col-6">
-                <img src="assets/images/banner-about-workshop.jpg" alt="Tractor Maintenance Workshop Bay" class="rounded w-100 border" style="height:250px;object-fit:cover;">
-              </div>
-              <div class="col-12">
-                <div class="p-4 rounded bg-charcoal text-white border border-secondary">
-                  <div class="row g-3 align-items-center">
-                    <div class="col-sm-8">
-                      <span class="font-mono small text-accent d-block">MOBILE WORKSHOP VAN FLEET</span>
-                      <h3 class="h4 font-heading text-uppercase text-white mb-1 d-block">3 Fully-Equipped Service Vans on Patrol</h3>
-                      <p class="small text-white-50 mb-0 d-block">Stocked with hydraulic hoses, shear bolts, PTO crosses, filters, and diagnostic tools across a 120 km service radius.</p>
-                    </div>
-                    <div class="col-sm-4 text-sm-end">
-                      <span class="display-5 font-heading fw-bold text-accent">99.4%</span>
-                      <span class="d-block small font-mono text-white-50">Season Completion</span>
-                    </div>
+        <div class="row g-4 align-items-end mb-5">
+          <div class="col-lg-8">
+            <span class="eyebrow-tag"><i class="bi bi-broadcast-pin"></i> Fleet Telematics &amp; Maintenance SLAs</span>
+            <h2 class="section-title mb-2">Contractor Fleet Support &amp; Rapid Service Vans</h2>
+            <p class="section-subtitle mb-0">
+              Commercial agriculture cannot afford downtime during 72-hour moisture windows. Here is how our fleet engineering protects your seasonal balance sheet.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="about.html" class="btn-agri-outline">Read Inspection Protocol &rarr;</a>
+          </div>
+        </div>
+
+        <div class="row g-4 justify-content-center mb-5">
+          <!-- Hub Card 1 -->
+          <div class="col-md-6 col-xl-4">
+            <div class="telematics-hub-card">
+              <div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="brand-emblem" style="width:46px;height:46px;font-size:1.3rem;">
+                    <i class="bi bi-cpu-fill"></i>
                   </div>
+                  <span class="badge bg-success-subtle text-success font-mono px-3 py-2">LIVE SATELLITE HUD</span>
                 </div>
+                <h3 class="h4 font-heading text-uppercase mb-2">GPS Telematics &amp; Digital Metering</h3>
+                <p class="text-secondary-custom small mb-4">
+                  Every tractor is fitted with tamper-proof CAN-bus telemetry tracking digital engine-hours, real-time diesel consumption, hydraulic oil temps, and precise field acreage geofencing.
+                </p>
+                <ul class="list-unstyled small font-mono text-muted-custom mb-0">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>Calibrated digital hour-meters</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>Real-time diesel level telemetry</li>
+                  <li><i class="bi bi-check-circle-fill text-accent me-2"></i>Automated 150h service alerts</li>
+                </ul>
+              </div>
+              <div class="pt-3 mt-4 border-top">
+                <span class="telematics-metric-footer">99.4% VERIFIED FIELD UPTIME</span>
               </div>
             </div>
           </div>
 
-          <div class="col-xl-6">
-            <span class="eyebrow-tag"><i class="bi bi-gear-wide-connected"></i> Operational Storytelling</span>
-            <h2 class="section-title">Engineered for Zero Downtime During Critical Sowing Windows</h2>
-            <p class="text-secondary-custom mb-4">
-              Commercial agriculture runs on tight biological clocks. When soil moisture is optimal for 72 hours after pre-monsoon showers, an overheating radiator or worn rotavator seal can derail an entire season's economics.
-            </p>
-
-            <div class="d-flex flex-column gap-3 mb-4">
-              <div class="p-3 rounded bg-surface border d-flex gap-3 align-items-start">
-                <span class="badge bg-dark font-mono p-2 mt-1">01</span>
-                <div>
-                  <h3 class="h5 font-heading text-uppercase mb-1 d-block">Dynamometer PTO &amp; Hydraulic Load Verification</h3>
-                  <p class="small text-secondary-custom mb-0 d-block">Every tractor is load-tested after 150 engine hours to verify full rated PTO horsepower and 3-point hitch lift pressure.</p>
+          <!-- Hub Card 2 -->
+          <div class="col-md-6 col-xl-4">
+            <div class="telematics-hub-card" style="border-top:4px solid var(--clr-accent);">
+              <div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="brand-emblem" style="width:46px;height:46px;font-size:1.3rem;">
+                    <i class="bi bi-tools"></i>
+                  </div>
+                  <span class="badge bg-warning-subtle text-dark font-mono px-3 py-2">120 KM DISPATCH RADIUS</span>
                 </div>
+                <h3 class="h4 font-heading text-uppercase mb-2">3 Rapid Mobile Workshop Vans</h3>
+                <p class="text-secondary-custom small mb-4">
+                  Fully-stocked 4WD mobile mechanic vans patrolling active agricultural clusters with hydraulic crimpers, shear bolts, PTO cross bearings, filters, and complete tool suites.
+                </p>
+                <ul class="list-unstyled small font-mono text-muted-custom mb-0">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>2.5-hour average on-field response</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>Calibrated wear-part calipers</li>
+                  <li><i class="bi bi-check-circle-fill text-accent me-2"></i>Guaranteed 3h machine replacement</li>
+                </ul>
               </div>
+              <div class="pt-3 mt-4 border-top">
+                <span class="telematics-metric-footer">ZERO SOWING WINDOW LOSS</span>
+              </div>
+            </div>
+          </div>
 
-              <div class="p-3 rounded bg-surface border d-flex gap-3 align-items-start">
-                <span class="badge bg-dark font-mono p-2 mt-1">02</span>
-                <div>
-                  <h3 class="h5 font-heading text-uppercase mb-1 d-block">Fresh Wear-Parts on Every Implement Handover</h3>
-                  <p class="small text-secondary-custom mb-0 d-block">Rotavator L-blades, reversible plough share points, and seed drill furrow openers are measured with calipers and replaced before critical wear limits.</p>
+          <!-- Hub Card 3 -->
+          <div class="col-md-6 col-xl-4">
+            <div class="telematics-hub-card">
+              <div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="brand-emblem" style="width:46px;height:46px;font-size:1.3rem;">
+                    <i class="bi bi-building-check"></i>
+                  </div>
+                  <span class="badge bg-primary-subtle text-primary font-mono px-3 py-2">FPO &amp; CHC PACKAGES</span>
                 </div>
+                <h3 class="h4 font-heading text-uppercase mb-2">Consolidated Contractor Billing</h3>
+                <p class="text-secondary-custom small mb-4">
+                  Tailored multi-machine packages for farmer producer companies (FPOs), land-clearing contractors, and corporate seed farms with single GST invoices and dedicated reserve units.
+                </p>
+                <ul class="list-unstyled small font-mono text-muted-custom mb-0">
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>Consolidated monthly billing</li>
+                  <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>Dedicated standby tractor on contract</li>
+                  <li><i class="bi bi-check-circle-fill text-accent me-2"></i>Direct bank RTGS &amp; KCC billing</li>
+                </ul>
               </div>
+              <div class="pt-3 mt-4 border-top">
+                <span class="telematics-metric-footer">CUSTOM HIRING COMPLIANT</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-              <div class="p-3 rounded bg-surface border d-flex gap-3 align-items-start">
-                <span class="badge bg-dark font-mono p-2 mt-1">03</span>
+        <!-- Telemetry Yard Status Bar -->
+        <div class="p-4 rounded bg-surface border">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-8">
+              <div class="d-flex align-items-center gap-3">
+                <img src="assets/images/banner-about-workshop.jpg" alt="IronField Machinery Maintenance Bay" class="rounded d-none d-sm-block" style="width:110px;height:78px;object-fit:cover;">
                 <div>
-                  <h3 class="h5 font-heading text-uppercase mb-1 d-block">Custom FPO &amp; Contractor Multi-Unit Leasing</h3>
-                  <p class="small text-secondary-custom mb-0 d-block">Need 3 tractors and 5 implements for a 45-day custom hiring contract? We structure consolidated monthly invoices with dedicated spare units.</p>
+                  <span class="telematics-metric-footer d-block mb-1">CENTRAL MACHINERY YARD &bull; KARNAL NH-44</span>
+                  <h4 class="h5 font-heading text-uppercase mb-1">Active Bay Status: 18 Tractors &bull; 34 Implements Ready for Immediate Dispatch</h4>
+                  <p class="small text-secondary-custom mb-0">Need a multi-unit combination delivered to your farm within 6 hours? Call yard dispatch directly.</p>
                 </div>
               </div>
             </div>
-
-            <div class="d-flex flex-wrap gap-3">
-              <a href="contact.html#enquiry-form" class="btn-agri-primary">
-                <i class="bi bi-file-earmark-text"></i> Request Contractor Fleet Quote
-              </a>
-              <a href="about.html" class="btn-agri-outline">
-                Read Inspection Protocol
+            <div class="col-lg-4 text-lg-end">
+              <a href="tel:+919876543210" class="btn-agri-primary py-2 px-3 w-100 w-lg-auto">
+                <i class="bi bi-telephone-outbound-fill"></i> Yard Dispatch: +91 98765 43210
               </a>
             </div>
           </div>
@@ -730,7 +793,7 @@
       </div>
     </section>
 
-    <!-- 5. TECHNICAL FAQ & RAPID DISPATCH CTA -->
+    <!-- 6. TECHNICAL FAQ & RAPID DISPATCH CTA -->
     <section class="section-padding bg-surface-alt border-top">
       <div class="container">
         <div class="row g-5">
@@ -809,6 +872,31 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTRACTOR MULTI-MACHINE LEASE TENDER CALLOUT -->
+    <section class="section-padding-sm" style="background:linear-gradient(100deg, #10241b 0%, #173829 100%);color:#ffffff;border-top:3px solid var(--clr-accent);">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-8">
+            <span class="badge bg-warning text-dark font-mono px-3 py-1 mb-2">CUSTOM HIRING &amp; CONTRACTOR TENDERS</span>
+            <h2 class="h3 font-heading text-uppercase text-white mb-2">Request an Institutional Multi-Machine Lease Tender</h2>
+            <p class="text-white-50 mb-0 small">
+              Consolidated 30 to 90-day equipment leases for commercial farms, FPOs, and sugarcane/paddy cooperatives with dedicated backup machines and on-site mechanics.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+              <a href="contact.html?equipment=custom-multi-machine#enquiry-form" class="btn-agri-primary py-2 px-4">
+                <i class="bi bi-file-earmark-spreadsheet-fill"></i> Request Fleet Tender
+              </a>
+              <a href="rates.html" class="btn-agri-outline-light py-2 px-3">
+                <i class="bi bi-table"></i> All Rates
+              </a>
             </div>
           </div>
         </div>
